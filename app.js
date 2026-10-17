@@ -6,6 +6,7 @@ const $$ = (selector, root = document) => Array.from(root.querySelectorAll(selec
 let uidCounter = 0;
 const nextId = (prefix) => `${prefix}-${++uidCounter}`;
 const STORAGE_KEY = 'wenyizaidao.designs.v1';
+const CATEGORY_ORDER = ['天象气象','几何构成','植物花卉','动物瑞兽','神兽与宇宙','人物故事','吉祥文字','器物博古','建筑空间','山水自然'];
 
 const state = {
   selectedPatternId: PATTERNS[0].id,
@@ -15,6 +16,7 @@ const state = {
   scale: 0.72,
   searchQuery: '',
   activeCategory: '全部',
+  sortMode: 'common',
   quizIndex: 0,
   quizScore: 0,
   quizAnswered: false,
@@ -656,6 +658,8 @@ function buildLabSvg(design, options = {}) {
   const palette = getPalette(design.paletteId);
   const width = options.width || 900;
   const height = options.height || 720;
+  const captionHeight = options.withCaption ? Math.round(height * 0.2) : 0;
+  const artHeight = height - captionHeight;
   const density = Number(design.density) || 4;
   const scale = Number(design.scale) || 0.72;
   const motif = patternMotifMarkup(pattern, palette);
@@ -671,21 +675,23 @@ function buildLabSvg(design, options = {}) {
           <g transform="translate(${offset} ${offset}) scale(${scale})">${motif}</g>
         </pattern>
       </defs>
-      <rect width="${width}" height="${height}" fill="url(#${tileId})" />`;
+      <rect width="${width}" height="${artHeight}" fill="url(#${tileId})" />`;
   } else if (design.transform === 'radial') {
     const count = Math.max(6, Math.round(density * 2.2));
-    const radius = Math.min(width, height) * 0.31;
+    const radius = Math.min(width, artHeight) * 0.31;
+    const cx = width / 2;
+    const cy = artHeight / 2;
     const groups = Array.from({ length: count }, (_, index) => {
       const angle = (360 / count) * index;
-      return `<g transform="translate(${width / 2} ${height / 2}) rotate(${angle}) translate(0 ${-radius}) scale(${scale * 0.78}) translate(-120 -120)">${motif}</g>`;
+      return `<g transform="translate(${cx} ${cy}) rotate(${angle}) translate(0 ${-radius}) scale(${scale * 0.78}) translate(-120 -120)">${motif}</g>`;
     }).join('');
-    content = `${groups}<g transform="translate(${width / 2} ${height / 2}) scale(${scale * 1.16}) translate(-120 -120)">${motif}</g>`;
+    content = `${groups}<g transform="translate(${cx} ${cy}) scale(${scale * 1.16}) translate(-120 -120)">${motif}</g>`;
   } else if (design.transform === 'mirror') {
     const positions = [
-      [width * 0.31, height * 0.34, 1],
-      [width * 0.69, height * 0.34, -1],
-      [width * 0.31, height * 0.7, 1],
-      [width * 0.69, height * 0.7, -1]
+      [width * 0.31, artHeight * 0.34, 1],
+      [width * 0.69, artHeight * 0.34, -1],
+      [width * 0.31, artHeight * 0.7, 1],
+      [width * 0.69, artHeight * 0.7, -1]
     ];
     content = positions.map(([x, y, direction]) => `
       <g transform="translate(${x} ${y}) scale(${scale * direction} ${scale}) translate(-120 -120)">${motif}</g>`).join('');
@@ -694,21 +700,43 @@ function buildLabSvg(design, options = {}) {
     const count = Math.max(6, Math.round(density * 2.4));
     content = Array.from({ length: count }, () => {
       const x = width * (0.1 + random() * 0.8);
-      const y = height * (0.1 + random() * 0.8);
+      const y = artHeight * (0.1 + random() * 0.8);
       const rotation = Math.round(random() * 360);
       const s = scale * (0.62 + random() * 0.48);
       return `<g transform="translate(${x.toFixed(1)} ${y.toFixed(1)}) rotate(${rotation}) scale(${s}) translate(-120 -120)" opacity="${(0.72 + random() * 0.28).toFixed(2)}">${motif}</g>`;
     }).join('');
   }
 
+  let caption = '';
+  if (options.withCaption) {
+    const sourceLabel = pattern.artifact.exact ? '馆藏实物' : '同类馆藏参照';
+    const sourceLine1 = `${sourceLabel} · The Cleveland Museum of Art`;
+    const sourceLine2 = `Accession No. ${pattern.artifact.accession} · ${pattern.artifact.date}`;
+    const left = Math.round(width * 0.05);
+    const titleSize = Math.round(width * 0.028);
+    const subtitleSize = Math.round(width * 0.019);
+    const sourceSize = Math.round(width * 0.011);
+    caption = `
+      <g>
+        <rect x="0" y="${artHeight}" width="${width}" height="${captionHeight}" fill="${palette.ink}" />
+        <rect x="0" y="${artHeight}" width="${width}" height="4" fill="${palette.accent}" />
+        <text x="${left}" y="${artHeight + Math.round(captionHeight * 0.34)}" fill="${palette.bg}" font-family="serif" font-size="${titleSize}" letter-spacing="3">纹以载道</text>
+        <text x="${left}" y="${artHeight + Math.round(captionHeight * 0.58)}" fill="${palette.accent}" font-family="serif" font-size="${subtitleSize}">${escapeHtml(pattern.name)} · ${escapeHtml(transformLabel(design.transform))} · ${escapeHtml(palette.name)}</text>
+        <text x="${left}" y="${artHeight + Math.round(captionHeight * 0.78)}" fill="${palette.bg}" opacity=".78" font-family="sans-serif" font-size="${sourceSize}">${escapeHtml(sourceLine1)}</text>
+        <text x="${left}" y="${artHeight + Math.round(captionHeight * 0.9)}" fill="${palette.bg}" opacity=".56" font-family="sans-serif" font-size="${Math.round(sourceSize * 0.9)}">${escapeHtml(sourceLine2)}</text>
+        <text x="${width - left}" y="${artHeight + Math.round(captionHeight * 0.5)}" text-anchor="end" fill="${palette.accent}" opacity=".72" font-family="sans-serif" font-size="${Math.round(sourceSize * 0.9)}" letter-spacing="1">PATTERNS AS LANGUAGE</text>
+      </g>`;
+  }
+
   return `
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}" width="${width}" height="${height}" role="img" aria-label="纹样实验室生成作品">
       <rect width="${width}" height="${height}" fill="${palette.bg}" />
       <g>${content}</g>
-      <rect x="18" y="18" width="${width - 36}" height="${height - 36}" fill="none" stroke="${palette.ink}" stroke-width="1.2" opacity=".35" />
-      <rect x="30" y="30" width="${width - 60}" height="${height - 60}" fill="none" stroke="${palette.accent}" stroke-width="1" opacity=".6" />
-      <circle cx="${width - 50}" cy="${height - 50}" r="18" fill="none" stroke="${palette.primary}" stroke-width="1.2" opacity=".55" />
-      <circle cx="${width - 50}" cy="${height - 50}" r="4" fill="${palette.primary}" opacity=".65" />
+      <rect x="18" y="18" width="${width - 36}" height="${artHeight - 36}" fill="none" stroke="${palette.ink}" stroke-width="1.2" opacity=".35" />
+      <rect x="30" y="30" width="${width - 60}" height="${artHeight - 60}" fill="none" stroke="${palette.accent}" stroke-width="1" opacity=".6" />
+      <circle cx="${width - 50}" cy="${artHeight - 50}" r="18" fill="none" stroke="${palette.primary}" stroke-width="1.2" opacity=".55" />
+      <circle cx="${width - 50}" cy="${artHeight - 50}" r="4" fill="${palette.primary}" opacity=".65" />
+      ${caption}
     </svg>`;
 }
 
@@ -747,10 +775,72 @@ function patternSearchText(pattern) {
     pattern.description,
     pattern.structure,
     ...(pattern.elements || []),
+    ...(pattern.tags || []),
+    ...(pattern.pinyin || []),
     artifact.accession,
     artifact.date,
     artifact.museum
   ].filter(Boolean).join(' ').toLowerCase();
+}
+
+function renderCardArt(card) {
+  const art = card.querySelector('.pattern-card-art');
+  if (!art || art.dataset.rendered === 'true') return;
+  const pattern = getPattern(card.dataset.patternId);
+  art.innerHTML = buildCardArt(pattern);
+  art.dataset.rendered = 'true';
+}
+
+function renderVisibleCardArt() {
+  const track = $('#patternTrack');
+  if (!track) return;
+  const trackRect = track.getBoundingClientRect();
+  $$('.pattern-card', track).forEach((card) => {
+    if (card.hidden) return;
+    const rect = card.getBoundingClientRect();
+    if (rect.bottom >= trackRect.top - 500 && rect.top <= trackRect.bottom + 500) renderCardArt(card);
+  });
+}
+
+function setupLazyCardArt() {
+  const track = $('#patternTrack');
+  if (!track) return;
+  const cards = $$('.pattern-card', track);
+  if (!('IntersectionObserver' in window)) {
+    cards.forEach(renderCardArt);
+    return;
+  }
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        renderCardArt(entry.target);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { root: track, rootMargin: '500px 0px' });
+  cards.forEach((card) => observer.observe(card));
+  requestAnimationFrame(renderVisibleCardArt);
+}
+
+function applyPatternSort() {
+  const track = $('#patternTrack');
+  if (!track) return;
+  const cards = $$('.pattern-card', track);
+  const sorted = [...cards].sort((a, b) => {
+    const original = Number(a.dataset.order) - Number(b.dataset.order);
+    if (state.sortMode === 'name') {
+      return (a.dataset.pinyin || a.dataset.name || '').localeCompare(b.dataset.pinyin || b.dataset.name || '', 'zh-CN') || original;
+    }
+    if (state.sortMode === 'exact') {
+      return Number(b.dataset.exact) - Number(a.dataset.exact) || original;
+    }
+    if (state.sortMode === 'category') {
+      return Number(a.dataset.groupOrder) - Number(b.dataset.groupOrder) || original;
+    }
+    return original;
+  });
+  sorted.forEach((card) => track.appendChild(card));
+  requestAnimationFrame(renderVisibleCardArt);
 }
 
 function updatePatternProgress() {
@@ -779,14 +869,17 @@ function applyPatternFilter() {
   if (result) result.textContent = (state.searchQuery || state.activeCategory !== '全部') ? `找到 ${visible} 个纹样` : `共 ${PATTERNS.length} 个纹样`;
   if (empty) empty.hidden = visible > 0;
   if (clear) clear.hidden = !state.searchQuery;
-  track.scrollLeft = 0;
+  track.scrollTop = 0;
   updatePatternProgress();
+  requestAnimationFrame(renderVisibleCardArt);
 }
 
 function setupPatternSearch() {
   const input = $('#patternSearch');
   const chips = $('#categoryFilters');
   const clear = $('#clearSearch');
+  const sort = $('#sortSelect');
+  const tagSuggestions = $('#tagSuggestions');
   if (!input || !chips) return;
   const groups = ['全部', ...new Set(PATTERNS.map(categoryGroup))];
   chips.innerHTML = groups.map((group) => `<button class="filter-chip${group === state.activeCategory ? ' active' : ''}" type="button" data-category="${escapeHtml(group)}">${escapeHtml(group)}</button>`).join('');
@@ -807,6 +900,25 @@ function setupPatternSearch() {
     $$('.filter-chip', chips).forEach((chip) => chip.classList.toggle('active', chip === button));
     applyPatternFilter();
   });
+  sort?.addEventListener('change', () => {
+    state.sortMode = sort.value;
+    applyPatternSort();
+    applyPatternFilter();
+  });
+  if (tagSuggestions) {
+    const hotTags = ['云气','龙','凤','佛教','婚庆','长寿','财富','文人','道教','祥瑞','皇权','多子'];
+    tagSuggestions.innerHTML = `<span class="tag-label">热门标签</span>${hotTags.map((tag) => `<button class="tag-chip" type="button" data-tag="${escapeHtml(tag)}">${escapeHtml(tag)}</button>`).join('')}`;
+    tagSuggestions.addEventListener('click', (event) => {
+      const button = event.target.closest('.tag-chip');
+      if (!button) return;
+      const tag = button.dataset.tag;
+      input.value = tag;
+      state.searchQuery = tag.toLowerCase();
+      state.activeCategory = '全部';
+      $$('.filter-chip', chips).forEach((chip) => chip.classList.toggle('active', chip.dataset.category === '全部'));
+      applyPatternFilter();
+    });
+  }
   document.addEventListener('keydown', (event) => {
     if (event.key === '/' && !['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement?.tagName)) {
       event.preventDefault();
@@ -824,15 +936,19 @@ function renderHero() {
 function renderPatternCards() {
   const track = $('#patternTrack');
   if (!track) return;
+  const groupOrder = (pattern) => {
+    const index = CATEGORY_ORDER.indexOf(categoryGroup(pattern));
+    return index < 0 ? 99 : index;
+  };
   track.innerHTML = PATTERNS.map((pattern, index) => `
-    <article class="pattern-card" data-pattern-id="${pattern.id}" data-category="${escapeHtml(categoryGroup(pattern))}" data-search="${escapeHtml(patternSearchText(pattern))}" tabindex="0" role="button" aria-label="查看${escapeHtml(pattern.name)}">
-      <div class="pattern-card-art" aria-hidden="true">${buildCardArt(pattern)}</div>
+    <article class="pattern-card" data-pattern-id="${pattern.id}" data-name="${escapeHtml(pattern.name)}" data-pinyin="${escapeHtml((pattern.pinyin || []).join(' '))}" data-order="${index}" data-group-order="${groupOrder(pattern)}" data-exact="${pattern.artifact && pattern.artifact.exact ? '1' : '0'}" data-category="${escapeHtml(categoryGroup(pattern))}" data-search="${escapeHtml(patternSearchText(pattern))}" tabindex="0" role="button" aria-label="查看${escapeHtml(pattern.name)}">
+      <div class="pattern-card-art" data-art-id="${pattern.id}" aria-hidden="true"></div>
       ${buildArtifactPeek(pattern)}
       <div class="pattern-card-copy">
         <span class="card-index">${String(index + 1).padStart(2, '0')} / ${String(PATTERNS.length).padStart(2, '0')} · ${escapeHtml(pattern.category)}</span>
         <h3>${escapeHtml(pattern.name)}</h3>
         <p>${escapeHtml(pattern.summary)}</p>
-        <div class="pattern-card-tags">${pattern.elements.map((tag) => `<span>${escapeHtml(tag)}</span>`).join('')}</div>
+        <div class="pattern-card-tags">${(pattern.tags || pattern.elements).slice(0, 3).map((tag) => `<span>${escapeHtml(tag)}</span>`).join('')}</div>
       </div>
     </article>`).join('');
 
@@ -1064,7 +1180,7 @@ function resetDesign() {
 }
 
 function downloadLabArt() {
-  const svg = buildLabSvg({ ...state, density: state.density, scale: state.scale }, { width: 1800, height: 1440 });
+  const svg = buildLabSvg({ ...state, density: state.density, scale: state.scale }, { width: 1800, height: 1440, withCaption: true });
   const blob = new Blob([svg], { type: 'image/svg+xml;charset=utf-8' });
   const url = URL.createObjectURL(blob);
   const image = new Image();
@@ -1158,7 +1274,7 @@ function openPatternDialog(patternId) {
   $('#dialogCategory').textContent = `${pattern.category} · ${pattern.era}`;
   $('#dialogTitle').textContent = pattern.name;
   $('#dialogMeaning').textContent = pattern.meaning;
-  $('#dialogMeta').innerHTML = pattern.elements.map((tag) => `<span>${escapeHtml(tag)}</span>`).join('');
+  $('#dialogMeta').innerHTML = (pattern.tags || pattern.elements).map((tag) => `<span>${escapeHtml(tag)}</span>`).join('');
   $('#dialogDescription').textContent = pattern.description;
   $('#dialogStructure').textContent = pattern.structure;
   const artifact = pattern.artifact;
@@ -1272,6 +1388,7 @@ function showToast(message) {
 function init() {
   renderHero();
   renderPatternCards();
+  setupLazyCardArt();
   setupPatternSearch();
   setupCarousel();
   setupQuiz();

@@ -75,12 +75,25 @@
       <div class="pattern-toolbar reveal">
         <label class="search-box" for="patternSearch">
           <span class="search-icon" aria-hidden="true">⌕</span>
-          <input id="patternSearch" type="search" placeholder="搜索纹样、寓意、年代或藏品编号…" autocomplete="off">
+          <input id="patternSearch" type="search" placeholder="搜索纹样、拼音、标签、寓意或藏品编号…" autocomplete="off">
           <button class="search-clear" id="clearSearch" type="button" aria-label="清空搜索" hidden>×</button>
         </label>
         <div class="filter-chips" id="categoryFilters" role="group" aria-label="按纹样类型筛选"></div>
-        <span class="search-result" id="searchResult">共 200 个纹样</span>
+        <div class="toolbar-meta">
+          <label class="sort-box" for="sortSelect">
+            <span>排序</span>
+            <select id="sortSelect">
+              <option value="common">常见度优先</option>
+              <option value="exact">精确实物优先</option>
+              <option value="name">按名称拼音</option>
+              <option value="category">按分类</option>
+            </select>
+          </label>
+          <span class="search-result" id="searchResult">共 200 个纹样</span>
+        </div>
       </div>
+
+      <div class="tag-suggestions reveal" id="tagSuggestions" aria-label="热门标签"></div>
 
       <div class="carousel-top reveal">
         <div class="carousel-hint"><span class="line"></span>左右滑动，展开长卷</div>
@@ -93,7 +106,7 @@
       <div class="pattern-track reveal" id="patternTrack" tabindex="0" aria-label="纹样库"></div>
       <div class="pattern-empty" id="patternEmpty" hidden>
         <strong>没有找到匹配的纹样</strong>
-        <span>试试搜索“云”“龙”“花卉”“吉祥”或藏品编号。</span>
+        <span>试试搜索“云”“long”“佛教”“婚庆”或藏品编号。</span>
       </div>
       <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
     </section>
@@ -183,9 +196,10 @@
           </div>
           <div class="lab-preview" id="labPreview" aria-live="polite"></div>
           <div class="lab-actions">
-            <button class="button button-primary" id="downloadBtn" type="button">导出 PNG <span aria-hidden="true">↓</span></button>
+            <button class="button button-primary" id="downloadBtn" type="button">导出作品 PNG <span aria-hidden="true">↓</span></button>
             <button class="button button-ghost-dark" id="saveBtn" type="button">收藏作品</button>
           </div>
+          <p class="export-note">导出图片会自动附上作品标题、构图方式与馆藏来源。</p>
         </div>
       </div>
 

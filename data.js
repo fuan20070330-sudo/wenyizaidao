@@ -36,7 +36,17 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1964.371.9, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1964.371.9, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "天象",
+      "云气",
+      "自然"
+    ],
+    "pinyin": [
+      "yun wen",
+      "yunwen",
+      "yw"
+    ]
   },
   {
     "id": "ruyi-cloud",
@@ -75,7 +85,19 @@ const PATTERNS = [
     "group": "天象气象",
     "motif": "tianxiang",
     "variant": 2,
-    "curated": true
+    "curated": true,
+    "tags": [
+      "天象",
+      "云气",
+      "自然",
+      "如意",
+      "吉祥"
+    ],
+    "pinyin": [
+      "ru yi yun wen",
+      "ruyiyunwen",
+      "ryyw"
+    ]
   },
   {
     "id": "lib-tianxiang-03",
@@ -114,7 +136,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1968.213, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1968.213, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "天象",
+      "云气",
+      "自然",
+      "祥瑞",
+      "祝福"
+    ],
+    "pinyin": [
+      "xiang yun wen",
+      "xiangyunwen",
+      "xyw"
+    ]
   },
   {
     "id": "lib-tianxiang-04",
@@ -153,7 +187,17 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1964.371.12, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1964.371.12, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "天象",
+      "云气",
+      "自然"
+    ],
+    "pinyin": [
+      "juan yun wen",
+      "juanyunwen",
+      "jyw"
+    ]
   },
   {
     "id": "lib-tianxiang-05",
@@ -192,7 +236,17 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1979.50, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1979.50, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "天象",
+      "云气",
+      "自然"
+    ],
+    "pinyin": [
+      "duo yun wen",
+      "duoyunwen",
+      "dyw"
+    ]
   },
   {
     "id": "cloud-thunder",
@@ -231,7 +285,19 @@ const PATTERNS = [
     "group": "天象气象",
     "motif": "tianxiang",
     "variant": 6,
-    "curated": true
+    "curated": true,
+    "tags": [
+      "天象",
+      "云气",
+      "自然",
+      "雷纹",
+      "力量"
+    ],
+    "pinyin": [
+      "yun lei wen",
+      "yunleiwen",
+      "ylw"
+    ]
   },
   {
     "id": "lib-tianxiang-07",
@@ -270,7 +336,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1961.421.2, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1961.421.2, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "天象",
+      "云气",
+      "自然",
+      "雷纹",
+      "力量"
+    ],
+    "pinyin": [
+      "lei wen",
+      "leiwen",
+      "lw"
+    ]
   },
   {
     "id": "lib-tianxiang-08",
@@ -309,7 +387,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1997.96, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1997.96, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "天象",
+      "云气",
+      "自然",
+      "光明"
+    ],
+    "pinyin": [
+      "ri yue wen",
+      "riyuewen",
+      "ryw"
+    ]
   },
   {
     "id": "lib-tianxiang-09",
@@ -348,7 +437,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1964.167, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1964.167, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "天象",
+      "云气",
+      "自然",
+      "光明"
+    ],
+    "pinyin": [
+      "xing wen",
+      "xingwen",
+      "xw"
+    ]
   },
   {
     "id": "lib-tianxiang-10",
@@ -387,7 +487,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1961.421.1, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1961.421.1, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "天象",
+      "云气",
+      "自然",
+      "秩序"
+    ],
+    "pinyin": [
+      "bei dou wen",
+      "beidouwen",
+      "bdw"
+    ]
   },
   {
     "id": "lib-tianxiang-11",
@@ -426,7 +537,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1961.421, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1961.421, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "天象",
+      "云气",
+      "自然",
+      "光明"
+    ],
+    "pinyin": [
+      "xing chen wen",
+      "xingchenwen",
+      "xcw"
+    ]
   },
   {
     "id": "lib-tianxiang-12",
@@ -465,7 +587,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1962.157.8, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1962.157.8, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "天象",
+      "云气",
+      "自然",
+      "瑞气"
+    ],
+    "pinyin": [
+      "xia wen",
+      "xiawen",
+      "xw"
+    ]
   },
   {
     "id": "lib-tianxiang-13",
@@ -504,7 +637,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1961.92, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1961.92, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "天象",
+      "云气",
+      "自然",
+      "瑞气"
+    ],
+    "pinyin": [
+      "hong wen",
+      "hongwen",
+      "hw"
+    ]
   },
   {
     "id": "lib-tianxiang-14",
@@ -543,7 +687,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1962.154, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1962.154, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "天象",
+      "云气",
+      "自然",
+      "天气"
+    ],
+    "pinyin": [
+      "feng wen",
+      "fengwen",
+      "fw"
+    ]
   },
   {
     "id": "lib-tianxiang-15",
@@ -582,7 +737,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1955.42, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1955.42, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "天象",
+      "云气",
+      "自然",
+      "天气"
+    ],
+    "pinyin": [
+      "yu wen",
+      "yuwen",
+      "yw"
+    ]
   },
   {
     "id": "lib-tianxiang-16",
@@ -621,7 +787,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1975.22.3, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1975.22.3, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "天象",
+      "云气",
+      "自然",
+      "天气"
+    ],
+    "pinyin": [
+      "xue wen",
+      "xuewen",
+      "xw"
+    ]
   },
   {
     "id": "lib-tianxiang-17",
@@ -660,7 +837,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1971.19, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1971.19, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "天象",
+      "云气",
+      "自然",
+      "火",
+      "力量"
+    ],
+    "pinyin": [
+      "huo yan wen",
+      "huoyanwen",
+      "hyw"
+    ]
   },
   {
     "id": "lib-tianxiang-18",
@@ -699,7 +888,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1985.71.7, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1985.71.7, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "天象",
+      "云气",
+      "自然",
+      "火",
+      "力量"
+    ],
+    "pinyin": [
+      "shan dian wen",
+      "shandianwen",
+      "sdw"
+    ]
   },
   {
     "id": "lib-tianxiang-19",
@@ -738,7 +939,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1964.222, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1964.222, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "天象",
+      "云气",
+      "自然",
+      "天气"
+    ],
+    "pinyin": [
+      "wu qi wen",
+      "wuqiwen",
+      "wqw"
+    ]
   },
   {
     "id": "lib-tianxiang-20",
@@ -777,7 +989,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1977.7, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1977.7, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "天象",
+      "云气",
+      "自然",
+      "天气"
+    ],
+    "pinyin": [
+      "shuang wen",
+      "shuangwen",
+      "sw"
+    ]
   },
   {
     "id": "fret",
@@ -816,7 +1039,18 @@ const PATTERNS = [
     "group": "几何构成",
     "motif": "jihe",
     "variant": 1,
-    "curated": true
+    "curated": true,
+    "tags": [
+      "几何",
+      "秩序",
+      "连续",
+      "回环"
+    ],
+    "pinyin": [
+      "hui wen",
+      "huiwen",
+      "hw"
+    ]
   },
   {
     "id": "hex",
@@ -855,7 +1089,19 @@ const PATTERNS = [
     "group": "几何构成",
     "motif": "jihe",
     "variant": 2,
-    "curated": true
+    "curated": true,
+    "tags": [
+      "几何",
+      "秩序",
+      "连续",
+      "长寿",
+      "稳固"
+    ],
+    "pinyin": [
+      "gui bei wen",
+      "guibeiwen",
+      "gbw"
+    ]
   },
   {
     "id": "bead",
@@ -894,7 +1140,18 @@ const PATTERNS = [
     "group": "几何构成",
     "motif": "jihe",
     "variant": 3,
-    "curated": true
+    "curated": true,
+    "tags": [
+      "几何",
+      "秩序",
+      "连续",
+      "圆环"
+    ],
+    "pinyin": [
+      "lian zhu wen",
+      "lianzhuwen",
+      "lzw"
+    ]
   },
   {
     "id": "coin",
@@ -933,7 +1190,19 @@ const PATTERNS = [
     "group": "几何构成",
     "motif": "jihe",
     "variant": 4,
-    "curated": true
+    "curated": true,
+    "tags": [
+      "几何",
+      "秩序",
+      "连续",
+      "财富",
+      "圆方"
+    ],
+    "pinyin": [
+      "tong qian wen",
+      "tongqianwen",
+      "tqw"
+    ]
   },
   {
     "id": "lib-jihe-05",
@@ -972,7 +1241,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2004.64, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2004.64, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "几何",
+      "秩序",
+      "连续",
+      "格律"
+    ],
+    "pinyin": [
+      "ling ge wen",
+      "linggewen",
+      "lgw"
+    ]
   },
   {
     "id": "lib-jihe-06",
@@ -1011,7 +1291,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1944.61.a, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1944.61.a, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "几何",
+      "秩序",
+      "连续",
+      "吉祥"
+    ],
+    "pinyin": [
+      "fang sheng wen",
+      "fangshengwen",
+      "fsw"
+    ]
   },
   {
     "id": "lib-jihe-07",
@@ -1050,7 +1341,17 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1944.61, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1944.61, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "几何",
+      "秩序",
+      "连续"
+    ],
+    "pinyin": [
+      "ba da yun",
+      "badayun",
+      "bdy"
+    ]
   },
   {
     "id": "lib-jihe-08",
@@ -1089,7 +1390,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1944.61.b, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1944.61.b, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "几何",
+      "秩序",
+      "连续",
+      "编织"
+    ],
+    "pinyin": [
+      "xi wen",
+      "xiwen",
+      "xw"
+    ]
   },
   {
     "id": "lib-jihe-09",
@@ -1128,7 +1440,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1942.1083.2, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1942.1083.2, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "几何",
+      "秩序",
+      "连续",
+      "线条"
+    ],
+    "pinyin": [
+      "tiao wen",
+      "tiaowen",
+      "tw"
+    ]
   },
   {
     "id": "lib-jihe-10",
@@ -1167,7 +1490,17 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1942.1083.1, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1942.1083.1, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "几何",
+      "秩序",
+      "连续"
+    ],
+    "pinyin": [
+      "wang ge wen",
+      "wanggewen",
+      "wgw"
+    ]
   },
   {
     "id": "lib-jihe-11",
@@ -1206,7 +1539,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1988.100, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1988.100, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "几何",
+      "秩序",
+      "连续",
+      "对称"
+    ],
+    "pinyin": [
+      "shi zi wen",
+      "shiziwen",
+      "szw"
+    ]
   },
   {
     "id": "lib-jihe-12",
@@ -1245,7 +1589,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1920.1950, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1920.1950, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "几何",
+      "秩序",
+      "连续",
+      "稳定"
+    ],
+    "pinyin": [
+      "san jiao wen",
+      "sanjiaowen",
+      "sjw"
+    ]
   },
   {
     "id": "lib-jihe-13",
@@ -1284,7 +1639,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1920.1949, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1920.1949, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "几何",
+      "秩序",
+      "连续",
+      "圆满"
+    ],
+    "pinyin": [
+      "yuan quan wen",
+      "yuanquanwen",
+      "yqw"
+    ]
   },
   {
     "id": "lib-jihe-14",
@@ -1323,7 +1689,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1993.158.1, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1993.158.1, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "几何",
+      "秩序",
+      "连续",
+      "线条"
+    ],
+    "pinyin": [
+      "xian wen",
+      "xianwen",
+      "xw"
+    ]
   },
   {
     "id": "lib-jihe-15",
@@ -1362,7 +1739,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1993.158.2, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1993.158.2, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "几何",
+      "秩序",
+      "连续",
+      "编织"
+    ],
+    "pinyin": [
+      "sheng wen",
+      "shengwen",
+      "sw"
+    ]
   },
   {
     "id": "lib-jihe-16",
@@ -1401,7 +1789,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1993.158, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1993.158, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "几何",
+      "秩序",
+      "连续",
+      "生活"
+    ],
+    "pinyin": [
+      "bian zhi wen",
+      "bianzhiwen",
+      "bzw"
+    ]
   },
   {
     "id": "lib-jihe-17",
@@ -1440,7 +1839,17 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1991.4, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1991.4, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "几何",
+      "秩序",
+      "连续"
+    ],
+    "pinyin": [
+      "bo lang ji he wen",
+      "bolangjihewen",
+      "bljhw"
+    ]
   },
   {
     "id": "lib-jihe-18",
@@ -1479,7 +1888,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1995.1, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1995.1, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "几何",
+      "秩序",
+      "连续",
+      "天象",
+      "光明"
+    ],
+    "pinyin": [
+      "liu jiao xing wen",
+      "liujiaoxingwen",
+      "ljxw"
+    ]
   },
   {
     "id": "lib-jihe-19",
@@ -1518,7 +1939,20 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1995.351, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1995.351, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "几何",
+      "秩序",
+      "连续",
+      "器物",
+      "圆满",
+      "文人"
+    ],
+    "pinyin": [
+      "qi pan wen",
+      "qipanwen",
+      "qpw"
+    ]
   },
   {
     "id": "endless-knot",
@@ -1557,7 +1991,20 @@ const PATTERNS = [
     "group": "几何构成",
     "motif": "jihe",
     "variant": 20,
-    "curated": true
+    "curated": true,
+    "tags": [
+      "几何",
+      "秩序",
+      "连续",
+      "吉祥",
+      "回环",
+      "器物"
+    ],
+    "pinyin": [
+      "pan zhang wen",
+      "panzhangwen",
+      "pzw"
+    ]
   },
   {
     "id": "peony",
@@ -1596,7 +2043,18 @@ const PATTERNS = [
     "group": "植物花卉",
     "motif": "zhiwu",
     "variant": 1,
-    "curated": true
+    "curated": true,
+    "tags": [
+      "植物",
+      "花卉",
+      "生长",
+      "富贵"
+    ],
+    "pinyin": [
+      "mu dan wen",
+      "mudanwen",
+      "mdw"
+    ]
   },
   {
     "id": "lotus",
@@ -1635,7 +2093,19 @@ const PATTERNS = [
     "group": "植物花卉",
     "motif": "zhiwu",
     "variant": 2,
-    "curated": true
+    "curated": true,
+    "tags": [
+      "植物",
+      "花卉",
+      "生长",
+      "佛教",
+      "清净"
+    ],
+    "pinyin": [
+      "lian hua wen",
+      "lianhuawen",
+      "lhw"
+    ]
   },
   {
     "id": "chrysanthemum",
@@ -1674,7 +2144,19 @@ const PATTERNS = [
     "group": "植物花卉",
     "motif": "zhiwu",
     "variant": 3,
-    "curated": true
+    "curated": true,
+    "tags": [
+      "植物",
+      "花卉",
+      "生长",
+      "长寿",
+      "秋意"
+    ],
+    "pinyin": [
+      "ju hua wen",
+      "juhuawen",
+      "jhw"
+    ]
   },
   {
     "id": "plum",
@@ -1713,7 +2195,19 @@ const PATTERNS = [
     "group": "植物花卉",
     "motif": "zhiwu",
     "variant": 4,
-    "curated": true
+    "curated": true,
+    "tags": [
+      "植物",
+      "花卉",
+      "生长",
+      "文人",
+      "高洁"
+    ],
+    "pinyin": [
+      "mei hua wen",
+      "meihuawen",
+      "mhw"
+    ]
   },
   {
     "id": "lib-zhiwu-05",
@@ -1752,7 +2246,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1973.74, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1973.74, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "植物",
+      "花卉",
+      "生长",
+      "文人",
+      "高洁"
+    ],
+    "pinyin": [
+      "lan hua wen",
+      "lanhuawen",
+      "lhw"
+    ]
   },
   {
     "id": "lib-zhiwu-06",
@@ -1791,7 +2297,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1953.127, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1953.127, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "植物",
+      "花卉",
+      "生长",
+      "文人",
+      "气节"
+    ],
+    "pinyin": [
+      "zhu wen",
+      "zhuwen",
+      "zw"
+    ]
   },
   {
     "id": "lib-zhiwu-07",
@@ -1830,7 +2348,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1967.192, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1967.192, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "植物",
+      "花卉",
+      "生长",
+      "长寿",
+      "坚韧"
+    ],
+    "pinyin": [
+      "song wen",
+      "songwen",
+      "sw"
+    ]
   },
   {
     "id": "lib-zhiwu-08",
@@ -1869,7 +2399,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2017.20, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2017.20, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "植物",
+      "花卉",
+      "生长",
+      "长寿",
+      "吉祥"
+    ],
+    "pinyin": [
+      "tao hua wen",
+      "taohuawen",
+      "thw"
+    ]
   },
   {
     "id": "lib-zhiwu-09",
@@ -1908,7 +2450,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2020.183, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2020.183, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "植物",
+      "花卉",
+      "生长",
+      "多子",
+      "丰饶"
+    ],
+    "pinyin": [
+      "shi liu wen",
+      "shiliuwen",
+      "slw"
+    ]
   },
   {
     "id": "lib-zhiwu-10",
@@ -1947,7 +2501,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2022.243, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2022.243, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "植物",
+      "花卉",
+      "生长",
+      "丰饶",
+      "生活"
+    ],
+    "pinyin": [
+      "pu tao wen",
+      "putaowen",
+      "ptw"
+    ]
   },
   {
     "id": "lib-zhiwu-11",
@@ -1986,7 +2552,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1964.226, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1964.226, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "植物",
+      "花卉",
+      "生长",
+      "生命",
+      "连续"
+    ],
+    "pinyin": [
+      "ren dong wen",
+      "rendongwen",
+      "rdw"
+    ]
   },
   {
     "id": "lib-zhiwu-12",
@@ -2025,7 +2603,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1995.374, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1995.374, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "植物",
+      "花卉",
+      "生长",
+      "生命",
+      "连续"
+    ],
+    "pinyin": [
+      "juan cao wen",
+      "juancaowen",
+      "jcw"
+    ]
   },
   {
     "id": "baoxiang",
@@ -2064,7 +2654,19 @@ const PATTERNS = [
     "group": "植物花卉",
     "motif": "zhiwu",
     "variant": 13,
-    "curated": true
+    "curated": true,
+    "tags": [
+      "植物",
+      "花卉",
+      "生长",
+      "佛教",
+      "吉祥"
+    ],
+    "pinyin": [
+      "bao xiang hua",
+      "baoxianghua",
+      "bxh"
+    ]
   },
   {
     "id": "floral",
@@ -2103,7 +2705,19 @@ const PATTERNS = [
     "group": "植物花卉",
     "motif": "zhiwu",
     "variant": 14,
-    "curated": true
+    "curated": true,
+    "tags": [
+      "植物",
+      "花卉",
+      "生长",
+      "生命",
+      "连续"
+    ],
+    "pinyin": [
+      "chan zhi wen",
+      "chanzhiwen",
+      "czw"
+    ]
   },
   {
     "id": "lib-zhiwu-15",
@@ -2142,7 +2756,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1964.182, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1964.182, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "植物",
+      "花卉",
+      "生长",
+      "富贵"
+    ],
+    "pinyin": [
+      "fu rong wen",
+      "furongwen",
+      "frw"
+    ]
   },
   {
     "id": "lib-zhiwu-16",
@@ -2181,7 +2806,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1989.268, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1989.268, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "植物",
+      "花卉",
+      "生长",
+      "雅致"
+    ],
+    "pinyin": [
+      "hai tang wen",
+      "haitangwen",
+      "htw"
+    ]
   },
   {
     "id": "lib-zhiwu-17",
@@ -2220,7 +2856,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1995.341, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1995.341, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "植物",
+      "花卉",
+      "生长",
+      "长寿",
+      "祥瑞"
+    ],
+    "pinyin": [
+      "ling zhi wen",
+      "lingzhiwen",
+      "lzw"
+    ]
   },
   {
     "id": "lib-zhiwu-18",
@@ -2259,7 +2907,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1989.320, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1989.320, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "植物",
+      "花卉",
+      "生长",
+      "福禄",
+      "吉祥"
+    ],
+    "pinyin": [
+      "hu lu wen",
+      "huluwen",
+      "hlw"
+    ]
   },
   {
     "id": "lib-zhiwu-19",
@@ -2298,7 +2958,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1964.170, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1964.170, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "植物",
+      "花卉",
+      "生长",
+      "丰收",
+      "生活"
+    ],
+    "pinyin": [
+      "dao sui wen",
+      "daosuiwen",
+      "dsw"
+    ]
   },
   {
     "id": "lib-zhiwu-20",
@@ -2337,7 +3009,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1969.226, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1969.226, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "植物",
+      "花卉",
+      "生长",
+      "春天",
+      "离别"
+    ],
+    "pinyin": [
+      "liu wen",
+      "liuwen",
+      "lw"
+    ]
   },
   {
     "id": "dragon",
@@ -2376,7 +3060,19 @@ const PATTERNS = [
     "group": "动物瑞兽",
     "motif": "dongwu",
     "variant": 1,
-    "curated": true
+    "curated": true,
+    "tags": [
+      "动物",
+      "祥瑞",
+      "灵动",
+      "龙",
+      "皇权"
+    ],
+    "pinyin": [
+      "long wen",
+      "longwen",
+      "lw"
+    ]
   },
   {
     "id": "phoenix",
@@ -2415,7 +3111,20 @@ const PATTERNS = [
     "group": "动物瑞兽",
     "motif": "dongwu",
     "variant": 2,
-    "curated": true
+    "curated": true,
+    "tags": [
+      "动物",
+      "祥瑞",
+      "灵动",
+      "凤",
+      "婚姻",
+      "婚庆"
+    ],
+    "pinyin": [
+      "feng wen",
+      "fengwen",
+      "fw"
+    ]
   },
   {
     "id": "lib-dongwu-03",
@@ -2454,7 +3163,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2000.118.1, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2000.118.1, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "动物",
+      "祥瑞",
+      "灵动",
+      "多子"
+    ],
+    "pinyin": [
+      "qi lin wen",
+      "qilinwen",
+      "qlw"
+    ]
   },
   {
     "id": "lib-dongwu-04",
@@ -2493,7 +3213,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1983.2, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1983.2, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "动物",
+      "祥瑞",
+      "灵动",
+      "护佑",
+      "力量"
+    ],
+    "pinyin": [
+      "shi wen",
+      "shiwen",
+      "sw"
+    ]
   },
   {
     "id": "lib-dongwu-05",
@@ -2532,7 +3264,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2000.118, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2000.118, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "动物",
+      "祥瑞",
+      "灵动",
+      "力量",
+      "护佑"
+    ],
+    "pinyin": [
+      "hu wen",
+      "huwen",
+      "hw"
+    ]
   },
   {
     "id": "lib-dongwu-06",
@@ -2571,7 +3315,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1995.356, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1995.356, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "动物",
+      "祥瑞",
+      "灵动",
+      "长寿"
+    ],
+    "pinyin": [
+      "lu wen",
+      "luwen",
+      "lw"
+    ]
   },
   {
     "id": "lib-dongwu-07",
@@ -2610,7 +3365,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1979.18, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1979.18, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "动物",
+      "祥瑞",
+      "灵动",
+      "长寿",
+      "高洁"
+    ],
+    "pinyin": [
+      "he wen",
+      "hewen",
+      "hw"
+    ]
   },
   {
     "id": "fish",
@@ -2649,7 +3416,19 @@ const PATTERNS = [
     "group": "动物瑞兽",
     "motif": "dongwu",
     "variant": 8,
-    "curated": true
+    "curated": true,
+    "tags": [
+      "动物",
+      "祥瑞",
+      "灵动",
+      "有余",
+      "丰收"
+    ],
+    "pinyin": [
+      "yu zao wen",
+      "yuzaowen",
+      "yzw"
+    ]
   },
   {
     "id": "bat",
@@ -2688,7 +3467,19 @@ const PATTERNS = [
     "group": "动物瑞兽",
     "motif": "dongwu",
     "variant": 9,
-    "curated": true
+    "curated": true,
+    "tags": [
+      "动物",
+      "祥瑞",
+      "灵动",
+      "福气",
+      "吉祥"
+    ],
+    "pinyin": [
+      "bian fu wen",
+      "bianfuwen",
+      "bfw"
+    ]
   },
   {
     "id": "lib-dongwu-10",
@@ -2727,7 +3518,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1989.327, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1989.327, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "动物",
+      "祥瑞",
+      "灵动",
+      "爱情",
+      "自由"
+    ],
+    "pinyin": [
+      "hu die wen",
+      "hudiewen",
+      "hdw"
+    ]
   },
   {
     "id": "lib-dongwu-11",
@@ -2766,7 +3569,20 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1960.41, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1960.41, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "动物",
+      "祥瑞",
+      "灵动",
+      "爱情",
+      "婚姻",
+      "婚庆"
+    ],
+    "pinyin": [
+      "yuan yang wen",
+      "yuanyangwen",
+      "yyw"
+    ]
   },
   {
     "id": "lib-dongwu-12",
@@ -2805,7 +3621,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1962.162, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1962.162, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "动物",
+      "祥瑞",
+      "灵动",
+      "吉祥",
+      "华美"
+    ],
+    "pinyin": [
+      "kong que wen",
+      "kongquewen",
+      "kqw"
+    ]
   },
   {
     "id": "lib-dongwu-13",
@@ -2844,7 +3672,21 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2000.118.2, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2000.118.2, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "动物",
+      "祥瑞",
+      "灵动",
+      "喜事",
+      "吉祥",
+      "祝福",
+      "婚庆"
+    ],
+    "pinyin": [
+      "xi que wen",
+      "xiquewen",
+      "xqw"
+    ]
   },
   {
     "id": "lib-dongwu-14",
@@ -2883,7 +3725,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1952.571.1, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1952.571.1, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "动物",
+      "祥瑞",
+      "灵动",
+      "生肖",
+      "奋进"
+    ],
+    "pinyin": [
+      "ma wen",
+      "mawen",
+      "mw"
+    ]
   },
   {
     "id": "lib-dongwu-15",
@@ -2922,7 +3776,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2015.498, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2015.498, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "动物",
+      "祥瑞",
+      "灵动",
+      "生肖",
+      "吉祥"
+    ],
+    "pinyin": [
+      "yang wen",
+      "yangwen",
+      "yw"
+    ]
   },
   {
     "id": "lib-dongwu-16",
@@ -2961,7 +3827,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1995.353, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1995.353, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "动物",
+      "祥瑞",
+      "灵动",
+      "生肖",
+      "勤劳"
+    ],
+    "pinyin": [
+      "niu wen",
+      "niuwen",
+      "nw"
+    ]
   },
   {
     "id": "lib-dongwu-17",
@@ -3000,7 +3878,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1952.571, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1952.571, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "动物",
+      "祥瑞",
+      "灵动",
+      "力量"
+    ],
+    "pinyin": [
+      "xiang wen",
+      "xiangwen",
+      "xw"
+    ]
   },
   {
     "id": "lib-dongwu-18",
@@ -3039,7 +3928,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1979.70, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1979.70, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "动物",
+      "祥瑞",
+      "灵动",
+      "生肖",
+      "长寿"
+    ],
+    "pinyin": [
+      "tu wen",
+      "tuwen",
+      "tw"
+    ]
   },
   {
     "id": "lib-dongwu-19",
@@ -3078,7 +3979,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1952.571.2, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1952.571.2, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "动物",
+      "祥瑞",
+      "灵动",
+      "生肖",
+      "灵巧"
+    ],
+    "pinyin": [
+      "hou wen",
+      "houwen",
+      "hw"
+    ]
   },
   {
     "id": "lib-dongwu-20",
@@ -3117,7 +4030,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1995.354, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1995.354, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "动物",
+      "祥瑞",
+      "灵动",
+      "长寿",
+      "稳固"
+    ],
+    "pinyin": [
+      "gui wen",
+      "guiwen",
+      "gw"
+    ]
   },
   {
     "id": "taotie",
@@ -3156,7 +4081,17 @@ const PATTERNS = [
     "group": "神兽与宇宙",
     "motif": "shenshou",
     "variant": 1,
-    "curated": true
+    "curated": true,
+    "tags": [
+      "神兽",
+      "威仪",
+      "宇宙"
+    ],
+    "pinyin": [
+      "tao tie wen",
+      "taotiewen",
+      "ttw"
+    ]
   },
   {
     "id": "kui-dragon",
@@ -3195,7 +4130,20 @@ const PATTERNS = [
     "group": "神兽与宇宙",
     "motif": "shenshou",
     "variant": 2,
-    "curated": true
+    "curated": true,
+    "tags": [
+      "神兽",
+      "威仪",
+      "宇宙",
+      "龙",
+      "祥瑞",
+      "皇权"
+    ],
+    "pinyin": [
+      "kui long wen",
+      "kuilongwen",
+      "klw"
+    ]
   },
   {
     "id": "lib-shenshou-03",
@@ -3234,7 +4182,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2023.97, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2023.97, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "神兽",
+      "威仪",
+      "宇宙",
+      "龙"
+    ],
+    "pinyin": [
+      "pan chi wen",
+      "panchiwen",
+      "pcw"
+    ]
   },
   {
     "id": "lib-shenshou-04",
@@ -3273,7 +4232,17 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1960.288, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1960.288, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "神兽",
+      "威仪",
+      "宇宙"
+    ],
+    "pinyin": [
+      "qiong qi wen",
+      "qiongqiwen",
+      "qqw"
+    ]
   },
   {
     "id": "lib-shenshou-05",
@@ -3312,7 +4281,17 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1989.3, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1989.3, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "神兽",
+      "威仪",
+      "宇宙"
+    ],
+    "pinyin": [
+      "hun dun wen",
+      "hundunwen",
+      "hdw"
+    ]
   },
   {
     "id": "lib-shenshou-06",
@@ -3351,7 +4330,17 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1961.89, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1961.89, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "神兽",
+      "威仪",
+      "宇宙"
+    ],
+    "pinyin": [
+      "tao wu wen",
+      "taowuwen",
+      "tww"
+    ]
   },
   {
     "id": "lib-shenshou-07",
@@ -3390,7 +4379,20 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1995.298, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1995.298, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "神兽",
+      "威仪",
+      "宇宙",
+      "龙",
+      "祥瑞",
+      "皇权"
+    ],
+    "pinyin": [
+      "qing long wen",
+      "qinglongwen",
+      "qlw"
+    ]
   },
   {
     "id": "lib-shenshou-08",
@@ -3429,7 +4431,20 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1973.158, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1973.158, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "神兽",
+      "威仪",
+      "宇宙",
+      "力量",
+      "护佑",
+      "四象"
+    ],
+    "pinyin": [
+      "bai hu wen",
+      "baihuwen",
+      "bhw"
+    ]
   },
   {
     "id": "lib-shenshou-09",
@@ -3468,7 +4483,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1995.281, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1995.281, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "神兽",
+      "威仪",
+      "宇宙",
+      "四象",
+      "凤"
+    ],
+    "pinyin": [
+      "zhu que wen",
+      "zhuquewen",
+      "zqw"
+    ]
   },
   {
     "id": "lib-shenshou-10",
@@ -3507,7 +4534,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2005.54, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2005.54, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "神兽",
+      "威仪",
+      "宇宙",
+      "四象",
+      "长寿"
+    ],
+    "pinyin": [
+      "xuan wu wen",
+      "xuanwuwen",
+      "xww"
+    ]
   },
   {
     "id": "lib-shenshou-11",
@@ -3546,7 +4585,20 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1962.213, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1962.213, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "神兽",
+      "威仪",
+      "宇宙",
+      "龙",
+      "祥瑞",
+      "皇权"
+    ],
+    "pinyin": [
+      "ying long wen",
+      "yinglongwen",
+      "ylw"
+    ]
   },
   {
     "id": "lib-shenshou-12",
@@ -3585,7 +4637,20 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1962.44, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1962.44, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "神兽",
+      "威仪",
+      "宇宙",
+      "龙",
+      "祥瑞",
+      "皇权"
+    ],
+    "pinyin": [
+      "chi long wen",
+      "chilongwen",
+      "clw"
+    ]
   },
   {
     "id": "lib-shenshou-13",
@@ -3624,7 +4689,20 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1995.376, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1995.376, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "神兽",
+      "威仪",
+      "宇宙",
+      "龙",
+      "祥瑞",
+      "皇权"
+    ],
+    "pinyin": [
+      "qiu long wen",
+      "qiulongwen",
+      "qlw"
+    ]
   },
   {
     "id": "lib-shenshou-14",
@@ -3663,7 +4741,20 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1995.375, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1995.375, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "神兽",
+      "威仪",
+      "宇宙",
+      "龙",
+      "祥瑞",
+      "皇权"
+    ],
+    "pinyin": [
+      "jiao long wen",
+      "jiaolongwen",
+      "jlw"
+    ]
   },
   {
     "id": "lib-shenshou-15",
@@ -3702,7 +4793,20 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1995.367, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1995.367, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "神兽",
+      "威仪",
+      "宇宙",
+      "生肖",
+      "奋进",
+      "祥瑞"
+    ],
+    "pinyin": [
+      "tian ma wen",
+      "tianmawen",
+      "tmw"
+    ]
   },
   {
     "id": "lib-shenshou-16",
@@ -3741,7 +4845,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1942.1082, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1942.1082, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "神兽",
+      "威仪",
+      "宇宙",
+      "护佑"
+    ],
+    "pinyin": [
+      "bi xie wen",
+      "bixiewen",
+      "bxw"
+    ]
   },
   {
     "id": "lib-shenshou-17",
@@ -3780,7 +4895,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1989.150, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1989.150, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "神兽",
+      "威仪",
+      "宇宙",
+      "护佑"
+    ],
+    "pinyin": [
+      "suan ni wen",
+      "suanniwen",
+      "snw"
+    ]
   },
   {
     "id": "lib-shenshou-18",
@@ -3819,7 +4945,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1962.217, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1962.217, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "神兽",
+      "威仪",
+      "宇宙",
+      "财富",
+      "护佑"
+    ],
+    "pinyin": [
+      "pi xiu wen",
+      "pixiuwen",
+      "pxw"
+    ]
   },
   {
     "id": "bagua",
@@ -3858,7 +4996,19 @@ const PATTERNS = [
     "group": "神兽与宇宙",
     "motif": "shenshou",
     "variant": 19,
-    "curated": true
+    "curated": true,
+    "tags": [
+      "神兽",
+      "威仪",
+      "宇宙",
+      "道教",
+      "秩序"
+    ],
+    "pinyin": [
+      "ba gua wen",
+      "baguawen",
+      "bgw"
+    ]
   },
   {
     "id": "lib-shenshou-20",
@@ -3897,7 +5047,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1995.348, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1995.348, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "神兽",
+      "威仪",
+      "宇宙",
+      "道教",
+      "阴阳"
+    ],
+    "pinyin": [
+      "tai ji wen",
+      "taijiwen",
+      "tjw"
+    ]
   },
   {
     "id": "children",
@@ -3936,7 +5098,19 @@ const PATTERNS = [
     "group": "人物故事",
     "motif": "renwu",
     "variant": 1,
-    "curated": true
+    "curated": true,
+    "tags": [
+      "人物",
+      "故事",
+      "生活",
+      "多子",
+      "童趣"
+    ],
+    "pinyin": [
+      "ying xi wen",
+      "yingxiwen",
+      "yxw"
+    ]
   },
   {
     "id": "lib-renwu-02",
@@ -3975,7 +5149,20 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1979.27, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1979.27, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "人物",
+      "故事",
+      "生活",
+      "道教",
+      "吉祥",
+      "护佑"
+    ],
+    "pinyin": [
+      "ba xian wen",
+      "baxianwen",
+      "bxw"
+    ]
   },
   {
     "id": "eight-immortals",
@@ -4014,7 +5201,20 @@ const PATTERNS = [
     "group": "人物故事",
     "motif": "renwu",
     "variant": 3,
-    "curated": true
+    "curated": true,
+    "tags": [
+      "人物",
+      "故事",
+      "生活",
+      "道教",
+      "吉祥",
+      "护佑"
+    ],
+    "pinyin": [
+      "an ba xian",
+      "anbaxian",
+      "abx"
+    ]
   },
   {
     "id": "lib-renwu-04",
@@ -4053,7 +5253,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1953.628, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1953.628, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "人物",
+      "故事",
+      "生活",
+      "雅致"
+    ],
+    "pinyin": [
+      "shi nv wen",
+      "shinvwen",
+      "snw"
+    ]
   },
   {
     "id": "lib-renwu-05",
@@ -4092,7 +5303,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1953.629, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1953.629, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "人物",
+      "故事",
+      "生活",
+      "文人"
+    ],
+    "pinyin": [
+      "gao shi wen",
+      "gaoshiwen",
+      "gsw"
+    ]
   },
   {
     "id": "lib-renwu-06",
@@ -4131,7 +5353,20 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1954.584, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1954.584, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "人物",
+      "故事",
+      "生活",
+      "敦煌",
+      "佛教",
+      "艺术"
+    ],
+    "pinyin": [
+      "fei tian wen",
+      "feitianwen",
+      "ftw"
+    ]
   },
   {
     "id": "lib-renwu-07",
@@ -4170,7 +5405,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1966.31.8, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1966.31.8, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "人物",
+      "故事",
+      "生活",
+      "敦煌",
+      "艺术"
+    ],
+    "pinyin": [
+      "ji le wen",
+      "jilewen",
+      "jlw"
+    ]
   },
   {
     "id": "lib-renwu-08",
@@ -4209,7 +5456,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1978.67, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1978.67, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "人物",
+      "故事",
+      "生活",
+      "多子",
+      "童趣"
+    ],
+    "pinyin": [
+      "tong zi wen",
+      "tongziwen",
+      "tzw"
+    ]
   },
   {
     "id": "lib-renwu-09",
@@ -4248,7 +5507,20 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1979.27.1.2, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1979.27.1.2, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "人物",
+      "故事",
+      "生活",
+      "天象",
+      "光明",
+      "长寿"
+    ],
+    "pinyin": [
+      "shou xing wen",
+      "shouxingwen",
+      "sxw"
+    ]
   },
   {
     "id": "lib-renwu-10",
@@ -4287,7 +5559,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1979.27.2, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1979.27.2, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "人物",
+      "故事",
+      "生活",
+      "护佑",
+      "年节"
+    ],
+    "pinyin": [
+      "men shen wen",
+      "menshenwen",
+      "msw"
+    ]
   },
   {
     "id": "lib-renwu-11",
@@ -4326,7 +5610,20 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1963.515, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1963.515, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "人物",
+      "故事",
+      "生活",
+      "财富",
+      "年节",
+      "祝福"
+    ],
+    "pinyin": [
+      "cai shen wen",
+      "caishenwen",
+      "csw"
+    ]
   },
   {
     "id": "lib-renwu-12",
@@ -4365,7 +5662,20 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1961.90, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1961.90, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "人物",
+      "故事",
+      "生活",
+      "护佑",
+      "年节",
+      "器物"
+    ],
+    "pinyin": [
+      "zhong kui wen",
+      "zhongkuiwen",
+      "zkw"
+    ]
   },
   {
     "id": "lib-renwu-13",
@@ -4404,7 +5714,20 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1979.27.2.13, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1979.27.2.13, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "人物",
+      "故事",
+      "生活",
+      "婚姻",
+      "吉祥",
+      "婚庆"
+    ],
+    "pinyin": [
+      "he he er xian",
+      "heheerxian",
+      "hhex"
+    ]
   },
   {
     "id": "lib-renwu-14",
@@ -4443,7 +5766,20 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1979.27.1.7, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1979.27.1.7, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "人物",
+      "故事",
+      "生活",
+      "长寿",
+      "吉祥",
+      "祝福"
+    ],
+    "pinyin": [
+      "ma gu xian shou",
+      "maguxianshou",
+      "mgxs"
+    ]
   },
   {
     "id": "lib-renwu-15",
@@ -4482,7 +5818,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1979.27.1, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1979.27.1, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "人物",
+      "故事",
+      "生活",
+      "文学"
+    ],
+    "pinyin": [
+      "luo shen wen",
+      "luoshenwen",
+      "lsw"
+    ]
   },
   {
     "id": "lib-renwu-16",
@@ -4521,7 +5868,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1994.94, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1994.94, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "人物",
+      "故事",
+      "生活",
+      "文人",
+      "气节"
+    ],
+    "pinyin": [
+      "zhu lin qi xian",
+      "zhulinqixian",
+      "zlqx"
+    ]
   },
   {
     "id": "lib-renwu-17",
@@ -4560,7 +5919,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1961.261, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1961.261, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "人物",
+      "故事",
+      "生活",
+      "戏曲",
+      "爱情"
+    ],
+    "pinyin": [
+      "xi xiang ji",
+      "xixiangji",
+      "xxj"
+    ]
   },
   {
     "id": "lib-renwu-18",
@@ -4599,7 +5970,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1997.95, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1997.95, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "人物",
+      "故事",
+      "生活",
+      "文学"
+    ],
+    "pinyin": [
+      "hong lou meng",
+      "hongloumeng",
+      "hlm"
+    ]
   },
   {
     "id": "lib-renwu-19",
@@ -4638,7 +6020,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1979.27.1.9, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1979.27.1.9, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "人物",
+      "故事",
+      "生活",
+      "伦理"
+    ],
+    "pinyin": [
+      "er shi si xiao",
+      "ershisixiao",
+      "essx"
+    ]
   },
   {
     "id": "lib-renwu-20",
@@ -4677,7 +6070,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1979.27.1.6, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1979.27.1.6, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "人物",
+      "故事",
+      "生活",
+      "戏曲"
+    ],
+    "pinyin": [
+      "xi qu ren wu",
+      "xiqurenwu",
+      "xqrw"
+    ]
   },
   {
     "id": "lib-wenzi-01",
@@ -4716,7 +6120,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2003.353, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2003.353, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "文字",
+      "祝福",
+      "对称",
+      "福气"
+    ],
+    "pinyin": [
+      "fu zi wen",
+      "fuziwen",
+      "fzw"
+    ]
   },
   {
     "id": "lib-wenzi-02",
@@ -4755,7 +6170,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2003.354, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2003.354, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "文字",
+      "祝福",
+      "对称",
+      "功名"
+    ],
+    "pinyin": [
+      "lu zi wen",
+      "luziwen",
+      "lzw"
+    ]
   },
   {
     "id": "lib-wenzi-03",
@@ -4794,7 +6220,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2023.162, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2023.162, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "文字",
+      "祝福",
+      "对称",
+      "长寿"
+    ],
+    "pinyin": [
+      "shou zi wen",
+      "shouziwen",
+      "szw"
+    ]
   },
   {
     "id": "lib-wenzi-04",
@@ -4833,7 +6270,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1998.169, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1998.169, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "文字",
+      "祝福",
+      "对称",
+      "喜事"
+    ],
+    "pinyin": [
+      "xi zi wen",
+      "xiziwen",
+      "xzw"
+    ]
   },
   {
     "id": "double-happiness",
@@ -4872,7 +6320,19 @@ const PATTERNS = [
     "group": "吉祥文字",
     "motif": "wenzi",
     "variant": 5,
-    "curated": true
+    "curated": true,
+    "tags": [
+      "文字",
+      "祝福",
+      "对称",
+      "喜事",
+      "婚庆"
+    ],
+    "pinyin": [
+      "shuang xi wen",
+      "shuangxiwen",
+      "sxw"
+    ]
   },
   {
     "id": "lib-wenzi-06",
@@ -4911,7 +6371,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2023.162.1, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2023.162.1, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "文字",
+      "祝福",
+      "对称",
+      "吉祥",
+      "绵长"
+    ],
+    "pinyin": [
+      "wan zi wen",
+      "wanziwen",
+      "wzw"
+    ]
   },
   {
     "id": "lib-wenzi-07",
@@ -4950,7 +6422,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2023.162.2, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2023.162.2, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "文字",
+      "祝福",
+      "对称",
+      "吉祥"
+    ],
+    "pinyin": [
+      "ji zi wen",
+      "jiziwen",
+      "jzw"
+    ]
   },
   {
     "id": "lib-wenzi-08",
@@ -4989,7 +6472,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1955.302.7, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1955.302.7, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "文字",
+      "祝福",
+      "对称",
+      "祥瑞"
+    ],
+    "pinyin": [
+      "xiang zi wen",
+      "xiangziwen",
+      "xzw"
+    ]
   },
   {
     "id": "lib-wenzi-09",
@@ -5028,7 +6522,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1955.302.4, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1955.302.4, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "文字",
+      "祝福",
+      "对称",
+      "财富"
+    ],
+    "pinyin": [
+      "cai zi wen",
+      "caiziwen",
+      "czw"
+    ]
   },
   {
     "id": "lib-wenzi-10",
@@ -5067,7 +6572,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1955.302.8, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1955.302.8, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "文字",
+      "祝福",
+      "对称",
+      "平安"
+    ],
+    "pinyin": [
+      "ping an wen",
+      "pinganwen",
+      "paw"
+    ]
   },
   {
     "id": "lib-wenzi-11",
@@ -5106,7 +6622,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1955.302.2, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1955.302.2, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "文字",
+      "祝福",
+      "对称",
+      "如意",
+      "吉祥"
+    ],
+    "pinyin": [
+      "ru yi wen",
+      "ruyiwen",
+      "ryw"
+    ]
   },
   {
     "id": "lib-wenzi-12",
@@ -5145,7 +6673,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2004.65, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2004.65, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "文字",
+      "祝福",
+      "对称",
+      "长寿"
+    ],
+    "pinyin": [
+      "chang ming wen",
+      "changmingwen",
+      "cmw"
+    ]
   },
   {
     "id": "lib-wenzi-13",
@@ -5184,7 +6723,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2025.192, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2025.192, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "文字",
+      "祝福",
+      "对称",
+      "富贵"
+    ],
+    "pinyin": [
+      "fu gui wen",
+      "fuguiwen",
+      "fgw"
+    ]
   },
   {
     "id": "lib-wenzi-14",
@@ -5223,7 +6773,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1955.302.5, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1955.302.5, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "文字",
+      "祝福",
+      "对称",
+      "安康"
+    ],
+    "pinyin": [
+      "kang ning wen",
+      "kangningwen",
+      "knw"
+    ]
   },
   {
     "id": "lib-wenzi-15",
@@ -5262,7 +6823,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1955.302.6, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1955.302.6, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "文字",
+      "祝福",
+      "对称",
+      "品德"
+    ],
+    "pinyin": [
+      "hao de wen",
+      "haodewen",
+      "hdw"
+    ]
   },
   {
     "id": "lib-wenzi-16",
@@ -5301,7 +6873,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1978.66, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1978.66, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "文字",
+      "祝福",
+      "对称",
+      "福气"
+    ],
+    "pinyin": [
+      "bai fu wen",
+      "baifuwen",
+      "bfw"
+    ]
   },
   {
     "id": "lib-wenzi-17",
@@ -5340,7 +6923,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1955.302.1, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1955.302.1, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "文字",
+      "祝福",
+      "对称",
+      "长寿"
+    ],
+    "pinyin": [
+      "bai shou wen",
+      "baishouwen",
+      "bsw"
+    ]
   },
   {
     "id": "lib-wenzi-18",
@@ -5379,7 +6973,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1955.302.3, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1955.302.3, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "文字",
+      "祝福",
+      "对称",
+      "长寿",
+      "圆满"
+    ],
+    "pinyin": [
+      "tuan shou wen",
+      "tuanshouwen",
+      "tsw"
+    ]
   },
   {
     "id": "lib-wenzi-19",
@@ -5418,7 +7024,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1959.46, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1959.46, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "文字",
+      "祝福",
+      "对称",
+      "福气"
+    ],
+    "pinyin": [
+      "wu fu wen",
+      "wufuwen",
+      "wfw"
+    ]
   },
   {
     "id": "lib-wenzi-20",
@@ -5457,7 +7074,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1984.45, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1984.45, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "文字",
+      "祝福",
+      "对称",
+      "品德"
+    ],
+    "pinyin": [
+      "shan zi wen",
+      "shanziwen",
+      "szw"
+    ]
   },
   {
     "id": "lib-qiwu-01",
@@ -5496,7 +7124,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1989.296, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1989.296, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "器物",
+      "博古",
+      "陈设",
+      "礼制"
+    ],
+    "pinyin": [
+      "ding wen",
+      "dingwen",
+      "dw"
+    ]
   },
   {
     "id": "lib-qiwu-02",
@@ -5535,7 +7174,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1977.8, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1977.8, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "器物",
+      "博古",
+      "陈设",
+      "平安"
+    ],
+    "pinyin": [
+      "ping wen",
+      "pingwen",
+      "pw"
+    ]
   },
   {
     "id": "lib-qiwu-03",
@@ -5574,7 +7224,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1964.177, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1964.177, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "器物",
+      "博古",
+      "陈设",
+      "生活"
+    ],
+    "pinyin": [
+      "hu wen",
+      "huwen",
+      "hw"
+    ]
   },
   {
     "id": "lib-qiwu-04",
@@ -5613,7 +7274,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1930.731, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1930.731, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "器物",
+      "博古",
+      "陈设",
+      "生活"
+    ],
+    "pinyin": [
+      "wan wen",
+      "wanwen",
+      "ww"
+    ]
   },
   {
     "id": "lib-qiwu-05",
@@ -5652,7 +7324,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1985.74, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1985.74, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "器物",
+      "博古",
+      "陈设",
+      "圆满"
+    ],
+    "pinyin": [
+      "pan wen",
+      "panwen",
+      "pw"
+    ]
   },
   {
     "id": "lib-qiwu-06",
@@ -5691,7 +7374,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1957.359, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1957.359, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "器物",
+      "博古",
+      "陈设",
+      "礼仪"
+    ],
+    "pinyin": [
+      "xiang lu wen",
+      "xiangluwen",
+      "xlw"
+    ]
   },
   {
     "id": "lib-qiwu-07",
@@ -5730,7 +7424,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1989.288, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1989.288, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "器物",
+      "博古",
+      "陈设",
+      "年节",
+      "光明"
+    ],
+    "pinyin": [
+      "deng long wen",
+      "denglongwen",
+      "dlw"
+    ]
   },
   {
     "id": "lib-qiwu-08",
@@ -5769,7 +7475,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1952.510, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1952.510, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "器物",
+      "博古",
+      "陈设",
+      "文人"
+    ],
+    "pinyin": [
+      "shan wen",
+      "shanwen",
+      "sw"
+    ]
   },
   {
     "id": "lib-qiwu-09",
@@ -5808,7 +7525,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1941.594, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1941.594, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "器物",
+      "博古",
+      "陈设",
+      "文人",
+      "音乐"
+    ],
+    "pinyin": [
+      "qin wen",
+      "qinwen",
+      "qw"
+    ]
   },
   {
     "id": "lib-qiwu-10",
@@ -5847,7 +7576,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2006.141, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2006.141, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "器物",
+      "博古",
+      "陈设",
+      "文人",
+      "智慧"
+    ],
+    "pinyin": [
+      "qi wen",
+      "qiwen",
+      "qw"
+    ]
   },
   {
     "id": "lib-qiwu-11",
@@ -5886,7 +7627,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2009.83, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2009.83, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "器物",
+      "博古",
+      "陈设",
+      "文人",
+      "典籍"
+    ],
+    "pinyin": [
+      "shu wen",
+      "shuwen",
+      "sw"
+    ]
   },
   {
     "id": "lib-qiwu-12",
@@ -5925,7 +7678,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1915.630, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1915.630, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "器物",
+      "博古",
+      "陈设",
+      "文人",
+      "艺术"
+    ],
+    "pinyin": [
+      "hua wen",
+      "huawen",
+      "hw"
+    ]
   },
   {
     "id": "lib-qiwu-13",
@@ -5964,7 +7729,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1952.567, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1952.567, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "器物",
+      "博古",
+      "陈设",
+      "文人",
+      "书写"
+    ],
+    "pinyin": [
+      "bi wen",
+      "biwen",
+      "bw"
+    ]
   },
   {
     "id": "lib-qiwu-14",
@@ -6003,7 +7780,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1952.480, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1952.480, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "器物",
+      "博古",
+      "陈设",
+      "文人",
+      "书写"
+    ],
+    "pinyin": [
+      "mo wen",
+      "mowen",
+      "mw"
+    ]
   },
   {
     "id": "lib-qiwu-15",
@@ -6042,7 +7831,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1952.506, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1952.506, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "器物",
+      "博古",
+      "陈设",
+      "文人",
+      "书写"
+    ],
+    "pinyin": [
+      "zhi wen",
+      "zhiwen",
+      "zw"
+    ]
   },
   {
     "id": "lib-qiwu-16",
@@ -6081,7 +7882,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1962.223, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1962.223, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "器物",
+      "博古",
+      "陈设",
+      "文人",
+      "书写"
+    ],
+    "pinyin": [
+      "yan wen",
+      "yanwen",
+      "yw"
+    ]
   },
   {
     "id": "lib-qiwu-17",
@@ -6120,7 +7933,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1947.543, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1947.543, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "器物",
+      "博古",
+      "陈设",
+      "光明"
+    ],
+    "pinyin": [
+      "jing wen",
+      "jingwen",
+      "jw"
+    ]
   },
   {
     "id": "lib-qiwu-18",
@@ -6159,7 +7983,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1964.238, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1964.238, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "器物",
+      "博古",
+      "陈设",
+      "力量"
+    ],
+    "pinyin": [
+      "jian wen",
+      "jianwen",
+      "jw"
+    ]
   },
   {
     "id": "lib-qiwu-19",
@@ -6198,7 +8033,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1920.424, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1920.424, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "器物",
+      "博古",
+      "陈设",
+      "时间"
+    ],
+    "pinyin": [
+      "zhong wen",
+      "zhongwen",
+      "zw"
+    ]
   },
   {
     "id": "lib-qiwu-20",
@@ -6237,7 +8083,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1970.41, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1970.41, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "器物",
+      "博古",
+      "陈设",
+      "文人"
+    ],
+    "pinyin": [
+      "bo gu wen",
+      "boguwen",
+      "bgw"
+    ]
   },
   {
     "id": "lib-jianzhu-01",
@@ -6276,7 +8133,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1915.69, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1915.69, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "建筑",
+      "空间",
+      "秩序",
+      "窗"
+    ],
+    "pinyin": [
+      "chuang ling wen",
+      "chuanglingwen",
+      "clw"
+    ]
   },
   {
     "id": "lib-jianzhu-02",
@@ -6315,7 +8183,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1915.66, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1915.66, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "建筑",
+      "空间",
+      "秩序",
+      "门"
+    ],
+    "pinyin": [
+      "men ding wen",
+      "mendingwen",
+      "mdw"
+    ]
   },
   {
     "id": "lib-jianzhu-03",
@@ -6354,7 +8233,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1915.68, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1915.68, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "建筑",
+      "空间",
+      "秩序",
+      "结构"
+    ],
+    "pinyin": [
+      "dou gong wen",
+      "dougongwen",
+      "dgw"
+    ]
   },
   {
     "id": "lib-jianzhu-04",
@@ -6393,7 +8283,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1992.1, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1992.1, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "建筑",
+      "空间",
+      "秩序",
+      "屋顶"
+    ],
+    "pinyin": [
+      "wa dang wen",
+      "wadangwen",
+      "wdw"
+    ]
   },
   {
     "id": "lib-jianzhu-05",
@@ -6432,7 +8333,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1979.54, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1979.54, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "建筑",
+      "空间",
+      "秩序",
+      "天花"
+    ],
+    "pinyin": [
+      "zao jing wen",
+      "zaojingwen",
+      "zjw"
+    ]
   },
   {
     "id": "lib-jianzhu-06",
@@ -6471,7 +8383,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1982.53, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1982.53, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "建筑",
+      "空间",
+      "秩序",
+      "结构"
+    ],
+    "pinyin": [
+      "zhu chu wen",
+      "zhuchuwen",
+      "zcw"
+    ]
   },
   {
     "id": "lib-jianzhu-07",
@@ -6510,7 +8433,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1965.28, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1965.28, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "建筑",
+      "空间",
+      "秩序",
+      "边界"
+    ],
+    "pinyin": [
+      "lan gan wen",
+      "langanwen",
+      "lgw"
+    ]
   },
   {
     "id": "lib-jianzhu-08",
@@ -6549,7 +8483,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1985.366, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1985.366, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "建筑",
+      "空间",
+      "秩序",
+      "门"
+    ],
+    "pinyin": [
+      "pu shou wen",
+      "pushouwen",
+      "psw"
+    ]
   },
   {
     "id": "lib-jianzhu-09",
@@ -6588,7 +8533,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1921.263, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1921.263, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "建筑",
+      "空间",
+      "秩序",
+      "护佑"
+    ],
+    "pinyin": [
+      "ji shou wen",
+      "jishouwen",
+      "jsw"
+    ]
   },
   {
     "id": "lib-jianzhu-10",
@@ -6627,7 +8583,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2004.1.29, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2004.1.29, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "建筑",
+      "空间",
+      "秩序",
+      "雕刻"
+    ],
+    "pinyin": [
+      "zhuan diao wen",
+      "zhuandiaowen",
+      "zdw"
+    ]
   },
   {
     "id": "lib-jianzhu-11",
@@ -6666,7 +8633,17 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1989.1, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1989.1, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "建筑",
+      "空间",
+      "秩序"
+    ],
+    "pinyin": [
+      "ying bi wen",
+      "yingbiwen",
+      "ybw"
+    ]
   },
   {
     "id": "lib-jianzhu-12",
@@ -6705,7 +8682,20 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2025.61, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2025.61, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "建筑",
+      "空间",
+      "秩序",
+      "天象",
+      "光明",
+      "园林"
+    ],
+    "pinyin": [
+      "yue dong men wen",
+      "yuedongmenwen",
+      "ydmw"
+    ]
   },
   {
     "id": "lib-jianzhu-13",
@@ -6744,7 +8734,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1975.11.c, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1975.11.c, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "建筑",
+      "空间",
+      "秩序",
+      "园林"
+    ],
+    "pinyin": [
+      "hua chuang wen",
+      "huachuangwen",
+      "hcw"
+    ]
   },
   {
     "id": "lib-jianzhu-14",
@@ -6783,7 +8784,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1990.84, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1990.84, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "建筑",
+      "空间",
+      "秩序",
+      "结构"
+    ],
+    "pinyin": [
+      "sun mao wen",
+      "sunmaowen",
+      "smw"
+    ]
   },
   {
     "id": "lib-jianzhu-15",
@@ -6822,7 +8834,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1925.137, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1925.137, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "建筑",
+      "空间",
+      "秩序",
+      "屋顶"
+    ],
+    "pinyin": [
+      "wu yan wen",
+      "wuyanwen",
+      "wyw"
+    ]
   },
   {
     "id": "lib-jianzhu-16",
@@ -6861,7 +8884,17 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1925.140, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1925.140, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "建筑",
+      "空间",
+      "秩序"
+    ],
+    "pinyin": [
+      "tai jie wen",
+      "taijiewen",
+      "tjw"
+    ]
   },
   {
     "id": "lib-jianzhu-17",
@@ -6900,7 +8933,20 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2023.50, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2023.50, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "建筑",
+      "空间",
+      "秩序",
+      "天气",
+      "自然",
+      "陈设"
+    ],
+    "pinyin": [
+      "ping feng wen",
+      "pingfengwen",
+      "pfw"
+    ]
   },
   {
     "id": "lib-jianzhu-18",
@@ -6939,7 +8985,17 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1971.17, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1971.17, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "建筑",
+      "空间",
+      "秩序"
+    ],
+    "pinyin": [
+      "hui lang wen",
+      "huilangwen",
+      "hlw"
+    ]
   },
   {
     "id": "lib-jianzhu-19",
@@ -6978,7 +9034,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2022.23, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 2022.23, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "建筑",
+      "空间",
+      "秩序",
+      "园林"
+    ],
+    "pinyin": [
+      "ting wen",
+      "tingwen",
+      "tw"
+    ]
   },
   {
     "id": "lib-jianzhu-20",
@@ -7017,7 +9084,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1999.222, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1999.222, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "建筑",
+      "空间",
+      "秩序",
+      "山水"
+    ],
+    "pinyin": [
+      "qiao wen",
+      "qiaowen",
+      "qw"
+    ]
   },
   {
     "id": "wave",
@@ -7056,7 +9134,19 @@ const PATTERNS = [
     "group": "山水自然",
     "motif": "shanshui",
     "variant": 1,
-    "curated": true
+    "curated": true,
+    "tags": [
+      "山水",
+      "自然",
+      "意境",
+      "江山",
+      "皇权"
+    ],
+    "pinyin": [
+      "hai shui jiang ya wen",
+      "haishuijiangyawen",
+      "hsjyw"
+    ]
   },
   {
     "id": "lib-shanshui-02",
@@ -7095,7 +9185,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1955.36, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1955.36, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "山水",
+      "自然",
+      "意境",
+      "水"
+    ],
+    "pinyin": [
+      "shui bo wen",
+      "shuibowen",
+      "sbw"
+    ]
   },
   {
     "id": "lib-shanshui-03",
@@ -7134,7 +9235,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1955.37.4, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1955.37.4, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "山水",
+      "自然",
+      "意境",
+      "山"
+    ],
+    "pinyin": [
+      "shan shi wen",
+      "shanshiwen",
+      "ssw"
+    ]
   },
   {
     "id": "lib-shanshui-04",
@@ -7173,7 +9285,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1979.27.1.10, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1979.27.1.10, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "山水",
+      "自然",
+      "意境",
+      "水"
+    ],
+    "pinyin": [
+      "jiang he wen",
+      "jianghewen",
+      "jhw"
+    ]
   },
   {
     "id": "lib-shanshui-05",
@@ -7212,7 +9335,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1954.583, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1954.583, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "山水",
+      "自然",
+      "意境",
+      "水"
+    ],
+    "pinyin": [
+      "pu bu wen",
+      "pubuwen",
+      "pbw"
+    ]
   },
   {
     "id": "lib-shanshui-06",
@@ -7251,7 +9385,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1966.367, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1966.367, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "山水",
+      "自然",
+      "意境",
+      "云气",
+      "天象"
+    ],
+    "pinyin": [
+      "yun shan wen",
+      "yunshanwen",
+      "ysw"
+    ]
   },
   {
     "id": "lib-shanshui-07",
@@ -7290,7 +9436,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1969.123, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1969.123, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "山水",
+      "自然",
+      "意境",
+      "海",
+      "力量"
+    ],
+    "pinyin": [
+      "hai tao wen",
+      "haitaowen",
+      "htw"
+    ]
   },
   {
     "id": "lib-shanshui-08",
@@ -7329,7 +9487,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1979.27.1.8, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1979.27.1.8, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "山水",
+      "自然",
+      "意境",
+      "水"
+    ],
+    "pinyin": [
+      "xi liu wen",
+      "xiliuwen",
+      "xlw"
+    ]
   },
   {
     "id": "lib-shanshui-09",
@@ -7368,7 +9537,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1980.10, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1980.10, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "山水",
+      "自然",
+      "意境",
+      "隐逸"
+    ],
+    "pinyin": [
+      "dao yu wen",
+      "daoyuwen",
+      "dyw"
+    ]
   },
   {
     "id": "lib-shanshui-10",
@@ -7407,7 +9587,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1960.182, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1960.182, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "山水",
+      "自然",
+      "意境",
+      "山"
+    ],
+    "pinyin": [
+      "yan shi wen",
+      "yanshiwen",
+      "ysw"
+    ]
   },
   {
     "id": "lib-shanshui-11",
@@ -7446,7 +9637,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1933.220, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1933.220, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "山水",
+      "自然",
+      "意境",
+      "水",
+      "生态"
+    ],
+    "pinyin": [
+      "shui zao wen",
+      "shuizaowen",
+      "szw"
+    ]
   },
   {
     "id": "lib-shanshui-12",
@@ -7485,7 +9688,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1959.348, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1959.348, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "山水",
+      "自然",
+      "意境",
+      "水",
+      "秋意"
+    ],
+    "pinyin": [
+      "lu wei wen",
+      "luweiwen",
+      "lww"
+    ]
   },
   {
     "id": "lib-shanshui-13",
@@ -7524,7 +9739,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1966.366, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1966.366, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "山水",
+      "自然",
+      "意境",
+      "水",
+      "动感"
+    ],
+    "pinyin": [
+      "lang hua wen",
+      "langhuawen",
+      "lhw"
+    ]
   },
   {
     "id": "lib-shanshui-14",
@@ -7563,7 +9790,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1997.93, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1997.93, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "山水",
+      "自然",
+      "意境",
+      "水",
+      "循环"
+    ],
+    "pinyin": [
+      "xuan wo wen",
+      "xuanwowen",
+      "xww"
+    ]
   },
   {
     "id": "lib-shanshui-15",
@@ -7602,7 +9841,19 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1975.75, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1975.75, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "山水",
+      "自然",
+      "意境",
+      "水",
+      "时间"
+    ],
+    "pinyin": [
+      "chao xi wen",
+      "chaoxiwen",
+      "cxw"
+    ]
   },
   {
     "id": "lib-shanshui-16",
@@ -7641,7 +9892,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1960.181, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1960.181, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "山水",
+      "自然",
+      "意境",
+      "裂纹"
+    ],
+    "pinyin": [
+      "bing lie wen",
+      "bingliewen",
+      "blw"
+    ]
   },
   {
     "id": "lib-shanshui-17",
@@ -7680,7 +9942,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1969.60, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1969.60, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "山水",
+      "自然",
+      "意境",
+      "细节"
+    ],
+    "pinyin": [
+      "tai dian wen",
+      "taidianwen",
+      "tdw"
+    ]
   },
   {
     "id": "lib-shanshui-18",
@@ -7719,7 +9992,18 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1962.42, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1962.42, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "山水",
+      "自然",
+      "意境",
+      "空间"
+    ],
+    "pinyin": [
+      "po an wen",
+      "poanwen",
+      "paw"
+    ]
   },
   {
     "id": "lib-shanshui-19",
@@ -7758,7 +10042,17 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1968.195, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1968.195, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "山水",
+      "自然",
+      "意境"
+    ],
+    "pinyin": [
+      "yuan shan wen",
+      "yuanshanwen",
+      "ysw"
+    ]
   },
   {
     "id": "lib-shanshui-20",
@@ -7797,7 +10091,17 @@ const PATTERNS = [
       "exact": false,
       "label": "同类馆藏参照"
     },
-    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1974.45, CC0；非该纹样的一对一实物。"
+    "source": "同类馆藏参照：The Cleveland Museum of Art, Accession No. 1974.45, CC0；非该纹样的一对一实物。",
+    "tags": [
+      "山水",
+      "自然",
+      "意境"
+    ],
+    "pinyin": [
+      "yan shui wen",
+      "yanshuiwen",
+      "ysw"
+    ]
   }
 ];
 
