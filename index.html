@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4efe5">
+  <meta name="description" content="纹以载道：中华传统纹样的数字解码与再创作。识纹、解纹、用纹的交互式 Web 应用。">
+  <title>纹以载道 · 中华传统纹样的数字解码</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="paper-grain" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#home" aria-label="返回首页">
+      <span class="brand-mark" aria-hidden="true">纹</span>
+      <span class="brand-copy">
+        <strong>纹以载道</strong>
+        <small>PATTERNS AS LANGUAGE</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav">
+      <span></span><span></span><span></span>
+      <span class="sr-only">打开导航</span>
+    </button>
+
+    <nav class="site-nav" id="siteNav" aria-label="主导航">
+      <a href="#scroll">数字长卷</a>
+      <a href="#decode">解码任务</a>
+      <a href="#lab">纹样实验室</a>
+      <a href="#archive">文化档案</a>
+      <a class="nav-cta" href="#lab">开始创作</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> 2026 数媒竞赛 · 移动与网络应用开发</div>
+        <h1>让纹样<br><em>开口说话</em></h1>
+        <p class="hero-lead">把中华传统纹样拆解为可阅读、可重组的视觉语言。识其形，解其意，再用它创造属于今天的新纹样。</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#scroll">进入数字长卷 <span aria-hidden="true">↘</span></a>
+          <button class="button button-ghost" id="tourBtn" type="button">一键体验</button>
+        </div>
+        <dl class="hero-stats">
+          <div><dt>200</dt><dd>传统纹样</dd></div>
+          <div><dt>10</dt><dd>纹样分类</dd></div>
+          <div><dt>∞</dt><dd>再创作可能</dd></div>
+        </dl>
+      </div>
+
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="halo halo-one"></div>
+        <div class="halo halo-two"></div>
+        <div class="hero-art" id="heroArt"></div>
+        <div class="floating-note note-one">母题</div>
+        <div class="floating-note note-two">结构</div>
+        <div class="floating-note note-three">构成</div>
+        <div class="hero-caption">一纹一世界<br><span>AN OLD GRAMMAR, A NEW LANGUAGE</span></div>
+      </div>
+    </section>
+
+    <section class="section scroll-section" id="scroll">
+      <div class="section-heading reveal">
+        <div>
+          <div class="eyebrow">01 · 识纹</div>
+          <h2>翻阅一座纹样库，<br>读懂纹样的来路。</h2>
+        </div>
+        <p>200 个常见纹样按天象、几何、植物、动物、神兽、人物、文字、器物、建筑与山水分类整理。每个纹样都由母题、结构与组合规则构成，也承载着人们对自然、秩序与生活的想象。</p>
+      </div>
+
+      <div class="pattern-toolbar reveal">
+        <label class="search-box" for="patternSearch">
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <input id="patternSearch" type="search" placeholder="搜索纹样、寓意、年代或藏品编号…" autocomplete="off">
+          <button class="search-clear" id="clearSearch" type="button" aria-label="清空搜索" hidden>×</button>
+        </label>
+        <div class="filter-chips" id="categoryFilters" role="group" aria-label="按纹样类型筛选"></div>
+        <span class="search-result" id="searchResult">共 200 个纹样</span>
+      </div>
+
+      <div class="carousel-top reveal">
+        <div class="carousel-hint"><span class="line"></span>左右滑动，展开长卷</div>
+        <div class="carousel-controls">
+          <button class="circle-button" id="prevPattern" type="button" aria-label="上一组纹样">←</button>
+          <button class="circle-button" id="nextPattern" type="button" aria-label="下一组纹样">→</button>
+        </div>
+      </div>
+
+      <div class="pattern-track reveal" id="patternTrack" tabindex="0" aria-label="纹样库"></div>
+      <div class="pattern-empty" id="patternEmpty" hidden>
+        <strong>没有找到匹配的纹样</strong>
+        <span>试试搜索“云”“龙”“花卉”“吉祥”或藏品编号。</span>
+      </div>
+      <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+    </section>
+
+    <section class="section decode-section" id="decode">
+      <div class="section-heading reveal">
+        <div>
+          <div class="eyebrow">02 · 解纹</div>
+          <h2>不只看见纹样，<br>还要读懂它的语法。</h2>
+        </div>
+        <p>从形态到寓意，从单元到结构。完成一轮解码任务，你会发现自己已经能用另一种方式观看传统。</p>
+      </div>
+
+      <div class="decode-shell reveal">
+        <div class="decode-aside">
+          <div class="decode-index" id="quizStep">01 / 05</div>
+          <h3>解码任务</h3>
+          <p>观察纹样，判断它最核心的构成逻辑或文化寓意。</p>
+          <div class="quiz-progress" id="quizProgress" aria-hidden="true"></div>
+          <div class="decode-seal" aria-hidden="true">解</div>
+        </div>
+
+        <div class="decode-card">
+          <div class="quiz-pattern" id="quizPattern" aria-hidden="true"></div>
+          <div class="quiz-body">
+            <p class="quiz-kicker">观察 · 判断 · 理解</p>
+            <h3 id="quizPrompt">正在载入题目…</h3>
+            <div class="quiz-options" id="quizOptions" role="group" aria-labelledby="quizPrompt"></div>
+            <div class="quiz-feedback" id="quizFeedback" hidden></div>
+            <button class="button button-dark" id="quizNext" type="button" disabled>下一题 <span aria-hidden="true">→</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section lab-section" id="lab">
+      <div class="section-heading reveal">
+        <div>
+          <div class="eyebrow">03 · 用纹</div>
+          <h2>把传统纹样，<br>变成你的创作工具。</h2>
+        </div>
+        <p>选择母题、构成与配色，像写句子一样组合纹样。每一次调整都会实时生成新的图案，并可导出为数字作品。</p>
+      </div>
+
+      <div class="lab-layout reveal">
+        <aside class="lab-controls" aria-label="纹样实验室控制面板">
+          <div class="control-block">
+            <label for="motifSelect">纹样母题</label>
+            <select id="motifSelect"></select>
+          </div>
+
+          <div class="control-block">
+            <span class="control-label">配色方案</span>
+            <div class="palette-list" id="paletteList" role="group" aria-label="选择配色"></div>
+          </div>
+
+          <div class="control-block">
+            <label for="transformSelect">构成方式</label>
+            <select id="transformSelect">
+              <option value="continuous">连续纹样</option>
+              <option value="radial">中心放射</option>
+              <option value="mirror">镜像对称</option>
+              <option value="scatter">自由散点</option>
+            </select>
+          </div>
+
+          <div class="control-block">
+            <label for="densityRange">密度 <output id="densityValue">4</output></label>
+            <input id="densityRange" type="range" min="2" max="8" value="4" step="1">
+          </div>
+
+          <div class="control-block">
+            <label for="scaleRange">母题尺度 <output id="scaleValue">0.72</output></label>
+            <input id="scaleRange" type="range" min="0.42" max="1.05" value="0.72" step="0.01">
+          </div>
+
+          <div class="control-actions">
+            <button class="button button-small button-ghost-dark" id="randomizeBtn" type="button">随机生成</button>
+            <button class="button button-small button-ghost-dark" id="resetBtn" type="button">恢复默认</button>
+          </div>
+        </aside>
+
+        <div class="lab-stage">
+          <div class="stage-top">
+            <span class="stage-label">实时生成 · LIVE CANVAS</span>
+            <span class="stage-status" id="stageStatus">连续纹样 / 云纹</span>
+          </div>
+          <div class="lab-preview" id="labPreview" aria-live="polite"></div>
+          <div class="lab-actions">
+            <button class="button button-primary" id="downloadBtn" type="button">导出 PNG <span aria-hidden="true">↓</span></button>
+            <button class="button button-ghost-dark" id="saveBtn" type="button">收藏作品</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-wrap reveal">
+        <div class="gallery-head">
+          <div>
+            <div class="eyebrow">我的纹样</div>
+            <h3>本地收藏</h3>
+          </div>
+          <button class="text-button" id="clearGalleryBtn" type="button">清空收藏</button>
+        </div>
+        <div class="gallery" id="gallery" aria-live="polite"></div>
+        <p class="gallery-empty" id="galleryEmpty">还没有收藏。调整参数后点击“收藏作品”，这里会组成你的个人纹样谱。</p>
+      </div>
+    </section>
+
+    <section class="section archive-section" id="archive">
+      <div class="section-heading reveal">
+        <div>
+          <div class="eyebrow">04 · 文化档案</div>
+          <h2>纹样是一种<br>可以被阅读的语言。</h2>
+        </div>
+        <p>本作品把传统纹样理解为“母题 + 结构 + 构成”的组合系统。理解语法，才能在不丢失文化逻辑的前提下进行当代表达。</p>
+      </div>
+
+      <div class="grammar-grid reveal">
+        <article class="grammar-card">
+          <span class="grammar-num">A</span>
+          <h3>母题</h3>
+          <p>云、花、水、几何单元等基本形象。它是纹样的最小意义单位。</p>
+          <div class="mini-diagram" id="diagramMotif" aria-hidden="true"></div>
+        </article>
+        <article class="grammar-card">
+          <span class="grammar-num">B</span>
+          <h3>结构</h3>
+          <p>对称、回环、连续、放射等组织方式。它决定纹样如何生长与延展。</p>
+          <div class="mini-diagram" id="diagramStructure" aria-hidden="true"></div>
+        </article>
+        <article class="grammar-card">
+          <span class="grammar-num">C</span>
+          <h3>构成</h3>
+          <p>把母题按结构组合成可应用的图案，并进入器物、服饰与空间。</p>
+          <div class="mini-diagram" id="diagramComposition" aria-hidden="true"></div>
+        </article>
+      </div>
+
+      <div class="archive-note single reveal">
+        <div>
+          <h3>资料与边界</h3>
+          <p>200 个纹样均配馆藏参照图：精确实物标注“馆藏实物”，其余标注“同类馆藏参照”，并注明藏品编号、年代与出处。实物图像来自克利夫兰艺术博物馆开放数据（CC0）。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <span class="brand-mark small" aria-hidden="true">纹</span>
+      <div><strong>纹以载道</strong><span>中华传统纹样的数字解码与再创作</span></div>
+    </div>
+    <p>2026 数媒竞赛参赛作品 · 评审材料匿名化 · 无专用硬件依赖</p>
+    <a href="#home">回到顶部 ↑</a>
+  </footer>
+
+  <dialog class="pattern-dialog" id="patternDialog">
+    <div class="dialog-shell">
+      <button class="dialog-close" id="dialogClose" type="button" aria-label="关闭">×</button>
+      <div class="dialog-art" id="dialogArt" aria-hidden="true"></div>
+      <div class="dialog-copy">
+        <div class="eyebrow" id="dialogCategory">纹样档案</div>
+        <h2 id="dialogTitle"></h2>
+        <p class="dialog-meaning" id="dialogMeaning"></p>
+        <div class="dialog-meta" id="dialogMeta"></div>
+        <p id="dialogDescription"></p>
+        <div class="dialog-structure">
+          <h3>纹样语法</h3>
+          <p id="dialogStructure"></p>
+        </div>
+        <div class="dialog-artifact" id="dialogArtifact">
+          <div class="dialog-artifact-image">
+            <img id="dialogArtifactImage" alt="馆藏实物照片" loading="lazy" decoding="async">
+          </div>
+          <div class="dialog-artifact-copy">
+            <span class="artifact-kicker">馆藏实物对照</span>
+            <strong id="dialogArtifactTitle"></strong>
+            <span id="dialogArtifactDetails"></span>
+            <a id="dialogArtifactLink" href="#" target="_blank" rel="noopener">查看馆藏记录 ↗</a>
+          </div>
+        </div>
+        <button class="button button-primary" id="dialogUse" type="button">在实验室中使用 <span aria-hidden="true">→</span></button>
+      </div>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
