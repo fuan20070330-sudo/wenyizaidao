@@ -197,7 +197,7 @@
           </div>
           <div class="lab-preview" id="labPreview" aria-live="polite"></div>
           <div class="lab-actions">
-            <button class="button button-primary" id="downloadBtn" type="button">导出作品 PNG <span aria-hidden="true">↓</span></button>
+            <button class="button button-primary" id="downloadBtn" type="button">导出作品 <span aria-hidden="true">↗</span></button>
             <button class="button button-ghost-dark" id="saveBtn" type="button">收藏作品</button>
           </div>
           <p class="export-note">导出图片会自动附上作品标题、构图方式与馆藏来源。</p>
@@ -290,6 +290,47 @@
           </div>
         </div>
         <button class="button button-primary" id="dialogUse" type="button">在实验室中使用 <span aria-hidden="true">→</span></button>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="export-dialog" id="exportDialog" aria-labelledby="exportDialogTitle">
+    <div class="export-shell">
+      <div class="export-head">
+        <div>
+          <div class="eyebrow">EXPORT · 导出作品</div>
+          <h2 id="exportDialogTitle">选择导出设置</h2>
+        </div>
+        <button class="dialog-close export-close" id="exportClose" type="button" aria-label="关闭导出设置">×</button>
+      </div>
+      <p class="export-current" id="exportPatternName"></p>
+      <div class="export-options">
+        <label>
+          <span>文件格式</span>
+          <select id="exportFormat">
+            <option value="png">PNG 图片</option>
+            <option value="svg">SVG 矢量</option>
+          </select>
+        </label>
+        <label>
+          <span>画布尺寸</span>
+          <select id="exportSize">
+            <option value="4x3">横版 4:3 · 1800 × 1440</option>
+            <option value="3x4">竖版 3:4 · 1080 × 1440</option>
+            <option value="1x1">方形 1:1 · 1440 × 1440</option>
+            <option value="16x9">宽屏 16:9 · 1920 × 1080</option>
+          </select>
+        </label>
+      </div>
+      <div class="export-checks">
+        <label><input id="exportCaption" type="checkbox" checked> 标题与馆藏来源</label>
+        <label><input id="exportQr" type="checkbox" checked> GitHub Pages 二维码</label>
+      </div>
+      <div class="export-preview" id="exportPreview" aria-label="导出效果预览"></div>
+      <p class="export-hint">PNG 为高分辨率图片；SVG 可继续编辑和印刷。取消“标题与馆藏来源”后会得到纯图案版本。</p>
+      <div class="export-actions">
+        <button class="button button-ghost-dark" id="cancelExport" type="button">取消</button>
+        <button class="button button-primary" id="confirmExport" type="button">下载文件 <span aria-hidden="true">↓</span></button>
       </div>
     </div>
   </dialog>

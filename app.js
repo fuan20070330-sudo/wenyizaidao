@@ -7,6 +7,50 @@ let uidCounter = 0;
 const nextId = (prefix) => `${prefix}-${++uidCounter}`;
 const STORAGE_KEY = 'wenyizaidao.designs.v1';
 const CATEGORY_ORDER = ['天象气象','几何构成','植物花卉','动物瑞兽','神兽与宇宙','人物故事','吉祥文字','器物博古','建筑空间','山水自然'];
+const SITE_QR_ROWS = [
+  '00000000000000000000000000000000000000000',
+  '00000000000000000000000000000000000000000',
+  '00000000000000000000000000000000000000000',
+  '00000000000000000000000000000000000000000',
+  '00001111111000001100110111111011111110000',
+  '00001000001001011111010011101010000010000',
+  '00001011101011101101111011011010111010000',
+  '00001011101011100011100110101010111010000',
+  '00001011101011101101001001010010111010000',
+  '00001000001011001001111011000010000010000',
+  '00001111111010101010101010101011111110000',
+  '00000000000010110001000001001000000000000',
+  '00001011111000010111110000010011111000000',
+  '00000010100100000010100101111011011010000',
+  '00001101011010010001101001001110101100000',
+  '00001011110101101011000001110010111010000',
+  '00000000001001110000001000111101110110000',
+  '00000001100000111111100011010110000110000',
+  '00001001101011010100000101000110011100000',
+  '00001010110001010010100111001110011000000',
+  '00000001001101100100010110001101100010000',
+  '00001100010010100110111100110011011010000',
+  '00000110111101101001110010100011101000000',
+  '00001001110010001100111101101101111010000',
+  '00000000111011111111100010001101110000000',
+  '00001110100011001111001001010010010010000',
+  '00001010001110110001100010101100110100000',
+  '00001010000000001101001001111010001000000',
+  '00001010001101110101010010011111100000000',
+  '00000000000011101000101100101000101010000',
+  '00001111111000100011001010111010101100000',
+  '00001000001011011100100101111000111100000',
+  '00001011101011010000001001001111110100000',
+  '00001011101011111111110011011100110110000',
+  '00001011101011000000010101011111010000000',
+  '00001000001001101000100111010010111000000',
+  '00001111111011011010011110011101010100000',
+  '00000000000000000000000000000000000000000',
+  '00000000000000000000000000000000000000000',
+  '00000000000000000000000000000000000000000',
+  '00000000000000000000000000000000000000000',
+];
+
 
 const state = {
   selectedPatternId: PATTERNS[0].id,
@@ -655,6 +699,21 @@ function buildQuizArt(pattern) {
     </svg>`;
 }
 
+function buildQrMarkup(x, y, size, dark, background) {
+  const rows = SITE_QR_ROWS;
+  const count = rows.length;
+  const cell = size / count;
+  const modules = [];
+  rows.forEach((row, rowIndex) => {
+    [...row].forEach((value, colIndex) => {
+      if (value === '1') {
+        modules.push(`<rect x="${(x + colIndex * cell).toFixed(3)}" y="${(y + rowIndex * cell).toFixed(3)}" width="${(cell + 0.25).toFixed(3)}" height="${(cell + 0.25).toFixed(3)}" fill="${dark}" />`);
+      }
+    });
+  });
+  return `<g shape-rendering="crispEdges"><rect x="${x}" y="${y}" width="${size}" height="${size}" fill="${background}" />${modules.join('')}</g>`;
+}
+
 function buildLabSvg(design, options = {}) {
   const pattern = getPattern(design.patternId);
   const palette = getPalette(design.paletteId);
@@ -718,6 +777,12 @@ function buildLabSvg(design, options = {}) {
     const titleSize = Math.round(width * 0.028);
     const subtitleSize = Math.round(width * 0.019);
     const sourceSize = Math.round(width * 0.011);
+    const qrSize = options.withQr ? Math.min(Math.round(width * 0.12), Math.round(captionHeight * 0.72)) : 0;
+    const qrX = width - left - qrSize;
+    const qrY = artHeight + Math.round((captionHeight - qrSize) / 2) - 4;
+    const qrMarkup = options.withQr
+      ? `${buildQrMarkup(qrX, qrY, qrSize, palette.ink, '#fff9ef')}<text x="${qrX + qrSize / 2}" y="${artHeight + captionHeight - 14}" text-anchor="middle" fill="${palette.bg}" opacity=".7" font-family="sans-serif" font-size="${Math.round(sourceSize * 0.85)}">扫码查看作品</text>`
+      : `<text x="${width - left}" y="${artHeight + Math.round(captionHeight * 0.5)}" text-anchor="end" fill="${palette.accent}" opacity=".72" font-family="sans-serif" font-size="${Math.round(sourceSize * 0.9)}" letter-spacing="1">PATTERNS AS LANGUAGE</text>`;
     caption = `
       <g>
         <rect x="0" y="${artHeight}" width="${width}" height="${captionHeight}" fill="${palette.ink}" />
@@ -726,7 +791,7 @@ function buildLabSvg(design, options = {}) {
         <text x="${left}" y="${artHeight + Math.round(captionHeight * 0.58)}" fill="${palette.accent}" font-family="serif" font-size="${subtitleSize}">${escapeHtml(pattern.name)} · ${escapeHtml(transformLabel(design.transform))} · ${escapeHtml(palette.name)}</text>
         <text x="${left}" y="${artHeight + Math.round(captionHeight * 0.78)}" fill="${palette.bg}" opacity=".78" font-family="sans-serif" font-size="${sourceSize}">${escapeHtml(sourceLine1)}</text>
         <text x="${left}" y="${artHeight + Math.round(captionHeight * 0.9)}" fill="${palette.bg}" opacity=".56" font-family="sans-serif" font-size="${Math.round(sourceSize * 0.9)}">${escapeHtml(sourceLine2)}</text>
-        <text x="${width - left}" y="${artHeight + Math.round(captionHeight * 0.5)}" text-anchor="end" fill="${palette.accent}" opacity=".72" font-family="sans-serif" font-size="${Math.round(sourceSize * 0.9)}" letter-spacing="1">PATTERNS AS LANGUAGE</text>
+        ${qrMarkup}
       </g>`;
   }
 
@@ -1203,7 +1268,6 @@ function setupLab() {
   });
   $('#randomizeBtn').addEventListener('click', randomizeDesign);
   $('#resetBtn').addEventListener('click', resetDesign);
-  $('#downloadBtn').addEventListener('click', downloadLabArt);
   $('#saveBtn').addEventListener('click', saveLabArt);
   $('#clearGalleryBtn').addEventListener('click', clearGallery);
   $('#gallery').addEventListener('click', (event) => {
@@ -1269,27 +1333,109 @@ function resetDesign() {
   showToast('已恢复默认纹样');
 }
 
-function downloadLabArt() {
-  const svg = buildLabSvg({ ...state, density: state.density, scale: state.scale }, { width: 1800, height: 1440, withCaption: true });
+const EXPORT_SIZE_PRESETS = {
+  '4x3': { width: 1800, height: 1440 },
+  '3x4': { width: 1080, height: 1440 },
+  '1x1': { width: 1440, height: 1440 },
+  '16x9': { width: 1920, height: 1080 }
+};
+
+function currentExportOptions() {
+  const sizeKey = $('#exportSize')?.value || '4x3';
+  const preset = EXPORT_SIZE_PRESETS[sizeKey] || EXPORT_SIZE_PRESETS['4x3'];
+  return {
+    format: $('#exportFormat')?.value || 'png',
+    sizeKey,
+    width: preset.width,
+    height: preset.height,
+    withCaption: $('#exportCaption')?.checked !== false,
+    withQr: $('#exportQr')?.checked !== false
+  };
+}
+
+function exportPreviewDimensions(width, height) {
+  const maxWidth = 560;
+  const maxHeight = 380;
+  const ratio = height / width;
+  let previewWidth = maxWidth;
+  let previewHeight = previewWidth * ratio;
+  if (previewHeight > maxHeight) {
+    previewHeight = maxHeight;
+    previewWidth = previewHeight / ratio;
+  }
+  return { width: Math.round(previewWidth), height: Math.round(previewHeight) };
+}
+
+function updateExportPreview() {
+  const options = currentExportOptions();
+  const caption = $('#exportCaption');
+  const qr = $('#exportQr');
+  if (caption && qr) {
+    if (!caption.checked) {
+      qr.checked = false;
+      qr.disabled = true;
+    } else {
+      qr.disabled = false;
+    }
+  }
+  const effectiveQr = options.withCaption && options.withQr;
+  const preview = exportPreviewDimensions(options.width, options.height);
+  const svg = buildLabSvg({ ...state, density: state.density, scale: state.scale }, {
+    width: preview.width,
+    height: preview.height,
+    withCaption: options.withCaption,
+    withQr: effectiveQr
+  });
+  const target = $('#exportPreview');
+  if (target) target.innerHTML = svg;
+  const name = $('#exportPatternName');
+  if (name) {
+    const pattern = getPattern(state.selectedPatternId);
+    const palette = getPalette(state.paletteId);
+    name.textContent = `${pattern.name} · ${transformLabel(state.transform)} · ${palette.name}`;
+  }
+}
+
+function openExportDialog() {
+  const dialog = $('#exportDialog');
+  if (!dialog) return;
+  updateExportPreview();
+  if (typeof dialog.showModal === 'function') dialog.showModal();
+  else dialog.setAttribute('open', '');
+}
+
+function downloadBlob(blob, filename) {
+  const link = document.createElement('a');
+  link.href = URL.createObjectURL(blob);
+  link.download = filename;
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  setTimeout(() => URL.revokeObjectURL(link.href), 1000);
+}
+
+function downloadSvgFile(svg, filename) {
+  downloadBlob(new Blob([svg], { type: 'image/svg+xml;charset=utf-8' }), filename);
+  showToast('SVG 已导出');
+}
+
+function downloadPngFile(svg, width, height, filename) {
   const blob = new Blob([svg], { type: 'image/svg+xml;charset=utf-8' });
   const url = URL.createObjectURL(blob);
   const image = new Image();
   image.onload = () => {
     const canvas = document.createElement('canvas');
-    canvas.width = 1800;
-    canvas.height = 1440;
+    canvas.width = width;
+    canvas.height = height;
     const context = canvas.getContext('2d');
-    context.drawImage(image, 0, 0, canvas.width, canvas.height);
+    context.drawImage(image, 0, 0, width, height);
     URL.revokeObjectURL(url);
     canvas.toBlob((pngBlob) => {
-      if (!pngBlob) return;
-      const link = document.createElement('a');
-      link.href = URL.createObjectURL(pngBlob);
-      link.download = `纹以载道_${getPattern(state.selectedPatternId).name}_${Date.now()}.png`;
-      document.body.appendChild(link);
-      link.click();
-      link.remove();
-      setTimeout(() => URL.revokeObjectURL(link.href), 1000);
+      if (!pngBlob) {
+        showToast('导出失败，请重试');
+        return;
+      }
+      downloadBlob(pngBlob, filename);
       showToast('PNG 已导出');
     }, 'image/png');
   };
@@ -1298,6 +1444,39 @@ function downloadLabArt() {
     showToast('导出失败，请刷新后重试');
   };
   image.src = url;
+}
+
+function performExport() {
+  const options = currentExportOptions();
+  const pattern = getPattern(state.selectedPatternId);
+  const palette = getPalette(state.paletteId);
+  const svg = buildLabSvg({ ...state, density: state.density, scale: state.scale }, {
+    width: options.width,
+    height: options.height,
+    withCaption: options.withCaption,
+    withQr: options.withCaption && options.withQr
+  });
+  const stamp = new Intl.DateTimeFormat('sv-SE', { timeZone: 'Asia/Shanghai' }).format(new Date());
+  const base = `纹以载道_${pattern.name}_${transformLabel(state.transform)}_${palette.name}_${options.sizeKey}_${stamp}`;
+  if (options.format === 'svg') downloadSvgFile(svg, `${base}.svg`);
+  else downloadPngFile(svg, options.width, options.height, `${base}.png`);
+  const dialog = $('#exportDialog');
+  if (dialog?.open) dialog.close();
+}
+
+function setupExportDialog() {
+  const dialog = $('#exportDialog');
+  if (!dialog) return;
+  $('#downloadBtn')?.addEventListener('click', openExportDialog);
+  $('#exportClose')?.addEventListener('click', () => dialog.close());
+  $('#cancelExport')?.addEventListener('click', () => dialog.close());
+  ['#exportFormat', '#exportSize', '#exportCaption', '#exportQr'].forEach((selector) => {
+    $(selector)?.addEventListener('change', updateExportPreview);
+  });
+  $('#confirmExport')?.addEventListener('click', performExport);
+  dialog.addEventListener('click', (event) => {
+    if (event.target === dialog) dialog.close();
+  });
 }
 
 function saveLabArt() {
@@ -1483,6 +1662,7 @@ function init() {
   setupCarousel();
   setupQuiz();
   setupLab();
+  setupExportDialog();
   setupDialog();
   setupNav();
   setupReveal();
