@@ -1207,3 +1207,39 @@ input[type="range"] { accent-color: var(--cinnabar); }
 }
 
 .export-note { margin: 8px 0 0; color: var(--muted); font-size: 10px; text-align: right; }
+
+.tag-chip.active {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper-light);
+}
+.tag-state {
+  margin-left: 4px;
+  padding: 1px 4px;
+  border-radius: 999px;
+  background: rgba(251, 248, 241, 0.18);
+  color: var(--accent, #c4a15a);
+  font-size: 7px;
+  letter-spacing: 0.04em;
+}
+.clear-all {
+  margin-left: 4px;
+  padding: 6px 10px;
+  border: 1px solid rgba(182, 64, 50, 0.35);
+  border-radius: 999px;
+  background: rgba(182, 64, 50, 0.06);
+  color: var(--cinnabar);
+  cursor: pointer;
+  font-size: 10px;
+}
+.clear-all:hover { background: var(--cinnabar); color: #fff8eb; }
+.empty-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 8px;
+}
+.empty-tag { font-size: 10px; }
+\nhtml { overflow-x: hidden; }\n@media (max-width: 560px) { .hero-visual { overflow: hidden; } }\n
+\nhtml, body { overflow-x: hidden; }\n.paper-grain { width: 100vw; max-width: 100vw; }\nbody::before { width: 100vw; max-width: 100vw; }\n.hero { overflow: hidden; }\n@media (max-width: 560px) { .hero-visual { overflow: hidden; } }\n

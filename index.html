@@ -75,7 +75,7 @@
       <div class="pattern-toolbar reveal">
         <label class="search-box" for="patternSearch">
           <span class="search-icon" aria-hidden="true">⌕</span>
-          <input id="patternSearch" type="search" placeholder="搜索纹样、拼音、标签、寓意或藏品编号…" autocomplete="off">
+          <input id="patternSearch" type="search" title="多个关键词用空格分隔，例如：龙 祥瑞" placeholder="搜索纹样、拼音、标签或藏品编号（空格分隔）" autocomplete="off">
           <button class="search-clear" id="clearSearch" type="button" aria-label="清空搜索" hidden>×</button>
         </label>
         <div class="filter-chips" id="categoryFilters" role="group" aria-label="按纹样类型筛选"></div>
@@ -106,7 +106,8 @@
       <div class="pattern-track reveal" id="patternTrack" tabindex="0" aria-label="纹样库"></div>
       <div class="pattern-empty" id="patternEmpty" hidden>
         <strong>没有找到匹配的纹样</strong>
-        <span>试试搜索“云”“long”“佛教”“婚庆”或藏品编号。</span>
+        <span>试试这些相近标签：</span>
+        <div class="empty-tags" id="emptyTags"></div>
       </div>
       <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
     </section>

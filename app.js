@@ -15,7 +15,9 @@ const state = {
   density: 4,
   scale: 0.72,
   searchQuery: '',
+  searchTerms: [],
   activeCategory: '全部',
+  activeTag: '',
   sortMode: 'common',
   quizIndex: 0,
   quizScore: 0,
@@ -851,24 +853,102 @@ function updatePatternProgress() {
   progress.style.width = `${max > 0 ? Math.min(100, (track.scrollLeft / max) * 100) : 100}%`;
 }
 
+function clearActiveTags() {
+  $$('.tag-chip[data-tag]').forEach((button) => {
+    button.classList.remove('active');
+    button.setAttribute('aria-pressed', 'false');
+    button.querySelector('.tag-state')?.remove();
+  });
+  state.activeTag = '';
+}
+
+function markActiveTag(tag) {
+  clearActiveTags();
+  const button = $$('.tag-chip[data-tag]').find((item) => item.dataset.tag === tag);
+  if (!button) return;
+  button.classList.add('active');
+  button.setAttribute('aria-pressed', 'true');
+  if (!button.querySelector('.tag-state')) button.insertAdjacentHTML('beforeend', '<span class="tag-state">已选中</span>');
+  state.activeTag = tag;
+}
+
+function selectTag(tag) {
+  const input = $('#patternSearch');
+  if (input) input.value = tag;
+  state.searchQuery = tag.toLowerCase();
+  state.searchTerms = [];
+  state.activeTag = tag;
+  state.activeCategory = '全部';
+  $$('.filter-chip').forEach((chip) => chip.classList.toggle('active', chip.dataset.category === '全部'));
+  markActiveTag(tag);
+  applyPatternFilter();
+}
+
+function clearAllFilters() {
+  const input = $('#patternSearch');
+  const sort = $('#sortSelect');
+  if (input) input.value = '';
+  if (sort) sort.value = 'common';
+  state.searchQuery = '';
+  state.searchTerms = [];
+  state.activeTag = '';
+  state.activeCategory = '全部';
+  state.sortMode = 'common';
+  $$('.filter-chip').forEach((chip) => chip.classList.toggle('active', chip.dataset.category === '全部'));
+  clearActiveTags();
+  applyPatternSort();
+  applyPatternFilter();
+  showToast('已清除全部筛选');
+}
+
+function updateClearAllVisibility() {
+  const button = $('#clearAllFilters');
+  if (!button) return;
+  button.hidden = !(state.searchTerms.length > 0 || state.activeCategory !== '全部' || state.sortMode !== 'common' || state.activeTag);
+}
+
+function renderEmptyRecommendations() {
+  const container = $('#emptyTags');
+  if (!container) return;
+  const counts = new Map();
+  PATTERNS.forEach((pattern) => (pattern.tags || []).forEach((tag) => counts.set(tag, (counts.get(tag) || 0) + 1)));
+  const terms = state.searchTerms;
+  const hasOverlap = [...counts.keys()].some((tag) => terms.some((term) => tag.includes(term) || term.includes(tag)));
+  const fallback = ['婚庆','长寿','佛教','财富','文人','道教','祥瑞','皇权','多子','云气','龙','凤'];
+  const candidates = hasOverlap ? [...counts.keys()] : fallback.filter((tag) => counts.has(tag));
+  const scored = candidates.map((tag) => {
+    let score = counts.get(tag) || 0;
+    if (terms.some((term) => tag.includes(term) || term.includes(tag))) score += 100;
+    if (terms.some((term) => term && tag[0] === term[0])) score += 20;
+    if (tag === state.activeTag) score -= 50;
+    return { tag, score };
+  }).sort((a, b) => b.score - a.score).slice(0, 6);
+  container.innerHTML = scored.map(({ tag }) => `<button class="tag-chip empty-tag" type="button" data-tag="${escapeHtml(tag)}">${escapeHtml(tag)}</button>`).join('');
+}
+
 function applyPatternFilter() {
   const track = $('#patternTrack');
   if (!track) return;
   const cards = $$('.pattern-card', track);
   let visible = 0;
   cards.forEach((card) => {
-    const matchesQuery = !state.searchQuery || (card.dataset.search || '').includes(state.searchQuery);
+    const search = card.dataset.search || '';
+    const cardTags = (card.dataset.tags || '').split('|').filter(Boolean);
+    const matchesQuery = state.activeTag ? true : (state.searchTerms.length === 0 || state.searchTerms.every((term) => search.includes(term)));
+    const matchesTag = state.activeTag ? cardTags.includes(state.activeTag) : true;
     const matchesCategory = state.activeCategory === '全部' || card.dataset.category === state.activeCategory;
-    const show = matchesQuery && matchesCategory;
+    const show = matchesQuery && matchesTag && matchesCategory;
     card.hidden = !show;
     if (show) visible += 1;
   });
   const result = $('#searchResult');
   const empty = $('#patternEmpty');
   const clear = $('#clearSearch');
-  if (result) result.textContent = (state.searchQuery || state.activeCategory !== '全部') ? `找到 ${visible} 个纹样` : `共 ${PATTERNS.length} 个纹样`;
+  if (result) result.textContent = (state.searchTerms.length || state.activeTag || state.activeCategory !== '全部') ? `找到 ${visible} 个纹样` : `共 ${PATTERNS.length} 个纹样`;
   if (empty) empty.hidden = visible > 0;
   if (clear) clear.hidden = !state.searchQuery;
+  updateClearAllVisibility();
+  if (visible === 0) renderEmptyRecommendations();
   track.scrollTop = 0;
   updatePatternProgress();
   requestAnimationFrame(renderVisibleCardArt);
@@ -883,13 +963,18 @@ function setupPatternSearch() {
   if (!input || !chips) return;
   const groups = ['全部', ...new Set(PATTERNS.map(categoryGroup))];
   chips.innerHTML = groups.map((group) => `<button class="filter-chip${group === state.activeCategory ? ' active' : ''}" type="button" data-category="${escapeHtml(group)}">${escapeHtml(group)}</button>`).join('');
+  const parseTerms = (value) => value.trim().toLowerCase().split(/\s+/).filter(Boolean);
   input.addEventListener('input', () => {
     state.searchQuery = input.value.trim().toLowerCase();
+    state.searchTerms = parseTerms(input.value);
+    clearActiveTags();
     applyPatternFilter();
   });
   clear?.addEventListener('click', () => {
     input.value = '';
     state.searchQuery = '';
+    state.searchTerms = [];
+    clearActiveTags();
     input.focus();
     applyPatternFilter();
   });
@@ -907,18 +992,23 @@ function setupPatternSearch() {
   });
   if (tagSuggestions) {
     const hotTags = ['云气','龙','凤','佛教','婚庆','长寿','财富','文人','道教','祥瑞','皇权','多子'];
-    tagSuggestions.innerHTML = `<span class="tag-label">热门标签</span>${hotTags.map((tag) => `<button class="tag-chip" type="button" data-tag="${escapeHtml(tag)}">${escapeHtml(tag)}</button>`).join('')}`;
+    tagSuggestions.innerHTML = `<span class="tag-label">热门标签</span>${hotTags.map((tag) => `<button class="tag-chip" type="button" data-tag="${escapeHtml(tag)}" aria-pressed="false">${escapeHtml(tag)}</button>`).join('')}<button class="clear-all" id="clearAllFilters" type="button" hidden>清除全部筛选</button>`;
     tagSuggestions.addEventListener('click', (event) => {
-      const button = event.target.closest('.tag-chip');
+      const button = event.target.closest('.tag-chip[data-tag]');
       if (!button) return;
-      const tag = button.dataset.tag;
-      input.value = tag;
-      state.searchQuery = tag.toLowerCase();
-      state.activeCategory = '全部';
-      $$('.filter-chip', chips).forEach((chip) => chip.classList.toggle('active', chip.dataset.category === '全部'));
-      applyPatternFilter();
+      if (button.classList.contains('active')) {
+        clearAllFilters();
+        return;
+      }
+      selectTag(button.dataset.tag);
     });
+    $('#clearAllFilters')?.addEventListener('click', clearAllFilters);
   }
+  $('#emptyTags')?.addEventListener('click', (event) => {
+    const button = event.target.closest('.tag-chip[data-tag]');
+    if (!button) return;
+    selectTag(button.dataset.tag);
+  });
   document.addEventListener('keydown', (event) => {
     if (event.key === '/' && !['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement?.tagName)) {
       event.preventDefault();
@@ -941,7 +1031,7 @@ function renderPatternCards() {
     return index < 0 ? 99 : index;
   };
   track.innerHTML = PATTERNS.map((pattern, index) => `
-    <article class="pattern-card" data-pattern-id="${pattern.id}" data-name="${escapeHtml(pattern.name)}" data-pinyin="${escapeHtml((pattern.pinyin || []).join(' '))}" data-order="${index}" data-group-order="${groupOrder(pattern)}" data-exact="${pattern.artifact && pattern.artifact.exact ? '1' : '0'}" data-category="${escapeHtml(categoryGroup(pattern))}" data-search="${escapeHtml(patternSearchText(pattern))}" tabindex="0" role="button" aria-label="查看${escapeHtml(pattern.name)}">
+    <article class="pattern-card" data-pattern-id="${pattern.id}" data-name="${escapeHtml(pattern.name)}" data-pinyin="${escapeHtml((pattern.pinyin || []).join(' '))}" data-order="${index}" data-group-order="${groupOrder(pattern)}" data-exact="${pattern.artifact && pattern.artifact.exact ? '1' : '0'}" data-category="${escapeHtml(categoryGroup(pattern))}" data-tags="${escapeHtml((pattern.tags || []).join('|'))}" data-search="${escapeHtml(patternSearchText(pattern))}" tabindex="0" role="button" aria-label="查看${escapeHtml(pattern.name)}">
       <div class="pattern-card-art" data-art-id="${pattern.id}" aria-hidden="true"></div>
       ${buildArtifactPeek(pattern)}
       <div class="pattern-card-copy">
