@@ -1251,8 +1251,17 @@ input[type="range"] { accent-color: var(--cinnabar); }
   margin-top: 8px;
 }
 .empty-tag { font-size: 10px; }
-\nhtml { overflow-x: hidden; }\n@media (max-width: 560px) { .hero-visual { overflow: hidden; } }\n
-\nhtml, body { overflow-x: hidden; }\n.paper-grain { width: 100vw; max-width: 100vw; }\nbody::before { width: 100vw; max-width: 100vw; }\n.hero { overflow: hidden; }\n@media (max-width: 560px) { .hero-visual { overflow: hidden; } }\n
+
+html { overflow-x: hidden; }
+@media (max-width: 560px) { .hero-visual { overflow: hidden; } }
+
+
+html, body { overflow-x: hidden; }
+.paper-grain { width: 100vw; max-width: 100vw; }
+body::before { width: 100vw; max-width: 100vw; }
+.hero { overflow: hidden; }
+@media (max-width: 560px) { .hero-visual { overflow: hidden; } }
+
 
 .export-dialog {
   width: min(820px, calc(100% - 24px));
@@ -1287,6 +1296,336 @@ input[type="range"] { accent-color: var(--cinnabar); }
   .export-actions .button { flex: 1; }
 }
 
+/* Apple-inspired visual direction, palette preserved */
+:root {
+  --sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --serif: "Songti SC", "STSong", "SimSun", serif;
+  --shadow: 0 30px 80px rgba(55, 42, 25, 0.12);
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background:
+    radial-gradient(circle at 78% 8%, rgba(255, 255, 255, 0.75), transparent 30rem),
+    radial-gradient(circle at 8% 22%, rgba(196, 161, 90, 0.08), transparent 24rem),
+    linear-gradient(180deg, #fbf8f1 0%, var(--paper) 42%, #efe7da 100%);
+  font-family: var(--sans);
+}
+
+body::before { opacity: 0.045; }
+.paper-grain { display: none; }
+::selection { background: rgba(182, 64, 50, 0.18); color: var(--ink); }
+
+h1, h2, h3, h4,
+.hero-stats dt,
+.brand-copy strong,
+.pattern-card-copy h3,
+.dialog-copy h2,
+.grammar-card h3,
+.gallery-head h3,
+.decode-aside h3,
+.quiz-body h3,
+.hero-caption {
+  font-family: var(--sans);
+}
+
+.site-header {
+  padding: 13px clamp(20px, 4vw, 56px);
+  background: rgba(251, 248, 241, 0.72);
+  border-bottom: 1px solid rgba(29, 28, 25, 0.06);
+  backdrop-filter: saturate(180%) blur(22px);
+  -webkit-backdrop-filter: saturate(180%) blur(22px);
+}
+.brand { gap: 11px; }
+.brand-mark {
+  width: 38px;
+  height: 38px;
+  font-size: 18px;
+  box-shadow: none;
+  background: var(--cinnabar);
+}
+.brand-copy strong { font-weight: 650; letter-spacing: 0.03em; }
+.brand-copy small { margin-top: 5px; font-size: 7px; letter-spacing: 0.14em; }
+.site-nav { gap: clamp(16px, 2.2vw, 30px); font-size: 13px; }
+.site-nav a { color: var(--ink-soft); }
+.site-nav a:hover { color: var(--ink); }
+.site-nav .nav-cta {
+  padding: 9px 17px;
+  border: 0;
+  background: var(--ink);
+  color: var(--paper-light);
+}
+.site-nav .nav-cta:hover { background: var(--cinnabar); }
+
+.hero {
+  position: relative;
+  min-height: calc(100vh - 64px);
+  gap: clamp(34px, 5vw, 76px);
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 4% 4% auto auto;
+  width: 52%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0) 68%);
+  filter: blur(8px);
+  pointer-events: none;
+  z-index: -1;
+}
+.hero h1 {
+  font-size: clamp(58px, 8.4vw, 114px);
+  font-weight: 700;
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+.hero h1 em {
+  color: var(--cinnabar);
+  font-weight: 700;
+}
+.hero h1 em::after { display: none; }
+.hero-lead {
+  margin-top: 28px;
+  max-width: 520px;
+  font-size: clamp(17px, 1.5vw, 21px);
+  line-height: 1.72;
+  color: var(--ink-soft);
+}
+.hero-actions { margin-top: 32px; gap: 13px; }
+.button {
+  min-height: 48px;
+  padding: 13px 23px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  transition: transform 220ms cubic-bezier(0.2, 0.7, 0.2, 1), box-shadow 220ms ease, background 220ms ease, color 220ms ease;
+}
+.button-primary {
+  background: var(--cinnabar);
+  box-shadow: 0 12px 24px rgba(182, 64, 50, 0.18);
+}
+.button-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 18px 34px rgba(182, 64, 50, 0.24);
+}
+.button-ghost {
+  background: rgba(255, 255, 255, 0.46);
+  border-color: rgba(29, 28, 25, 0.09);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+.button-ghost:hover { background: rgba(255, 255, 255, 0.78); }
+.hero-stats { margin-top: 44px; gap: clamp(22px, 4vw, 50px); }
+.hero-stats dt { font-size: clamp(29px, 3.4vw, 44px); font-weight: 650; letter-spacing: -0.04em; }
+.hero-stats dd { font-size: 10px; letter-spacing: 0.09em; }
+.hero-visual { min-height: 570px; }
+.hero-visual::before {
+  content: "";
+  position: absolute;
+  width: 82%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0) 66%);
+  filter: blur(10px);
+  pointer-events: none;
+}
+.hero-art { position: relative; filter: drop-shadow(0 36px 54px rgba(55, 42, 25, 0.14)); }
+.halo { border-color: rgba(182, 64, 50, 0.12); }
+.floating-note {
+  border-color: rgba(29, 28, 25, 0.07);
+  background: rgba(251, 248, 241, 0.7);
+  box-shadow: 0 10px 28px rgba(55, 42, 25, 0.07);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+}
+.hero-caption { font-weight: 600; letter-spacing: -0.02em; }
+.hero-caption span { font-size: 7px; letter-spacing: 0.13em; }
+
+.section { width: min(1180px, calc(100% - 48px)); padding: clamp(86px, 10vw, 150px) 0; }
+.section-heading { gap: clamp(30px, 6vw, 82px); margin-bottom: clamp(42px, 6vw, 72px); }
+.eyebrow {
+  margin-bottom: 15px;
+  font-size: 9px;
+  font-weight: 650;
+  letter-spacing: 0.15em;
+  color: var(--cinnabar);
+}
+.section-heading h2 {
+  font-size: clamp(38px, 5vw, 66px);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.05em;
+}
+.section-heading > p {
+  max-width: 400px;
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+.pattern-toolbar {
+  padding: 14px;
+  border: 1px solid rgba(29, 28, 25, 0.07);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.42);
+  box-shadow: 0 12px 36px rgba(55, 42, 25, 0.045);
+  backdrop-filter: saturate(160%) blur(20px);
+  -webkit-backdrop-filter: saturate(160%) blur(20px);
+}
+.search-box input {
+  min-height: 46px;
+  border: 0;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: inset 0 0 0 1px rgba(29, 28, 25, 0.08);
+  font-size: 12px;
+}
+.search-box input:focus {
+  box-shadow: inset 0 0 0 1px rgba(182, 64, 50, 0.38), 0 0 0 4px rgba(182, 64, 50, 0.08);
+}
+.search-icon { font-size: 19px; }
+.filter-chip, .tag-chip {
+  border-color: rgba(29, 28, 25, 0.08);
+  background: rgba(255, 255, 255, 0.48);
+}
+.filter-chip.active, .tag-chip.active, .tag-chip:hover {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper-light);
+}
+.tag-chip.active .tag-state { background: rgba(255, 255, 255, 0.14); color: var(--gold); }
+.sort-box select {
+  min-height: 32px;
+  border-color: rgba(29, 28, 25, 0.08);
+  background: rgba(255, 255, 255, 0.6);
+}
+.tag-suggestions { margin: 14px 0 22px; }
+.clear-all {
+  border-color: rgba(182, 64, 50, 0.22);
+  background: rgba(182, 64, 50, 0.045);
+}
+
+.pattern-track { gap: 19px; padding: 10px 6px 26px 6px; }
+.pattern-card {
+  border-color: rgba(29, 28, 25, 0.07);
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 18px 44px rgba(55, 42, 25, 0.075);
+  transition: transform 360ms cubic-bezier(0.2, 0.7, 0.2, 1), box-shadow 360ms ease, border-color 360ms ease;
+}
+.pattern-card:hover {
+  transform: translateY(-6px) scale(1.008);
+  border-color: rgba(182, 64, 50, 0.16);
+  box-shadow: 0 28px 62px rgba(55, 42, 25, 0.13);
+}
+.pattern-card-art { padding: 12px; }
+.pattern-card-art::after { background: linear-gradient(180deg, transparent 40%, rgba(29, 28, 25, 0.78) 100%); }
+.pattern-card-copy { padding: 22px; }
+.pattern-card-copy h3 { font-weight: 650; letter-spacing: -0.035em; }
+.pattern-card-copy p { color: rgba(251, 248, 241, 0.76); }
+.pattern-card-tags span { border-color: rgba(255, 255, 255, 0.22); }
+.artifact-badge {
+  background: rgba(29, 28, 25, 0.56);
+  border-color: rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+.artifact-peek {
+  border-color: rgba(29, 28, 25, 0.08);
+  border-radius: 19px;
+  background: rgba(251, 248, 241, 0.96);
+  box-shadow: 0 26px 60px rgba(55, 42, 25, 0.17);
+}
+
+.decode-aside { border-radius: 25px; }
+.decode-card {
+  border-color: rgba(29, 28, 25, 0.07);
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 18px 44px rgba(55, 42, 25, 0.06);
+}
+.decode-card { border-radius: 25px; }
+.quiz-option {
+  border-color: rgba(29, 28, 25, 0.08);
+  background: rgba(255, 255, 255, 0.68);
+  border-radius: 13px;
+}
+.quiz-option:hover:not(:disabled) { background: rgba(255, 255, 255, 0.95); }
+.decode-seal { opacity: 0.65; }
+
+.lab-controls, .lab-stage {
+  border-color: rgba(29, 28, 25, 0.07);
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.54);
+  box-shadow: 0 18px 44px rgba(55, 42, 25, 0.055);
+}
+.lab-preview {
+  border-radius: 20px;
+  box-shadow: inset 0 0 0 1px rgba(29, 28, 25, 0.06);
+}
+select {
+  border-color: rgba(29, 28, 25, 0.08);
+  background: rgba(255, 255, 255, 0.68);
+}
+.gallery-item {
+  border-color: rgba(29, 28, 25, 0.08);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(55, 42, 25, 0.05);
+}
+.grammar-card {
+  border-color: rgba(29, 28, 25, 0.07);
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 16px 40px rgba(55, 42, 25, 0.045);
+}
+.archive-note { border-radius: 25px; }
+.site-footer { border-top-color: rgba(29, 28, 25, 0.07); }
+
+.pattern-dialog, .export-dialog {
+  border-radius: 28px;
+  background: rgba(251, 248, 241, 0.98);
+  box-shadow: 0 45px 130px rgba(25, 20, 14, 0.32);
+}
+.dialog-art, .export-preview { border-radius: 19px; }
+.dialog-close, .export-close {
+  border-color: rgba(29, 28, 25, 0.08);
+  background: rgba(255, 255, 255, 0.76);
+  box-shadow: 0 8px 20px rgba(55, 42, 25, 0.06);
+}
+.toast { background: rgba(29, 28, 25, 0.88); backdrop-filter: blur(18px); }
+
+@media (max-width: 1080px) {
+  .section { width: min(100% - 40px, 1180px); }
+  .hero::before { width: 62%; }
+}
+@media (max-width: 860px) {
+  .hero { gap: 34px; }
+  .section { width: min(100% - 32px, 1180px); padding: 82px 0; }
+  .section-heading { gap: 18px; }
+  .pattern-toolbar { padding: 12px; }
+  .pattern-track { gap: 14px; }
+}
+@media (max-width: 560px) {
+  .site-header { padding: 10px 16px; }
+  .brand-mark { width: 34px; height: 34px; font-size: 16px; }
+  .brand-copy strong { font-size: 16px; }
+  .hero h1 { font-size: clamp(54px, 19vw, 82px); }
+  .hero-lead { margin-top: 22px; font-size: 16px; }
+  .hero-stats { margin-top: 34px; }
+  .section { width: min(100% - 28px, 1180px); padding: 72px 0; }
+  .section-heading h2 { font-size: clamp(34px, 10vw, 48px); }
+  .pattern-toolbar { border-radius: 19px; }
+  .pattern-card { border-radius: 20px; }
+  .pattern-card-copy h3 { font-size: 20px; }
+  .lab-controls, .lab-stage, .decode-card, .decode-aside { border-radius: 21px; }
+}
+
+.hero h1, .section-heading h2 { font-family: var(--sans); }
+
+
 </style>
 </head>
 <body>
@@ -1318,7 +1657,6 @@ input[type="range"] { accent-color: var(--cinnabar); }
   <main>
     <section class="hero section" id="home">
       <div class="hero-copy reveal">
-        <div class="eyebrow"><span class="eyebrow-dot"></span> 2026 数媒竞赛 · 移动与网络应用开发</div>
         <h1>让纹样<br><em>开口说话</em></h1>
         <p class="hero-lead">识其形，解其意。</p>
         <div class="hero-actions">
@@ -1349,7 +1687,7 @@ input[type="range"] { accent-color: var(--cinnabar); }
           <div class="eyebrow">01 · 识纹</div>
           <h2>翻阅一座纹样库，<br>读懂纹样的来路。</h2>
         </div>
-        <p>200 个常见纹样按天象、几何、植物、动物、神兽、人物、文字、器物、建筑与山水分类整理。每个纹样都由母题、结构与组合规则构成，也承载着人们对自然、秩序与生活的想象。</p>
+        <p>每个纹样都由母题、结构与组合规则构成，也承载着人们对自然、秩序与生活的想象。</p>
       </div>
 
       <div class="pattern-toolbar reveal">
@@ -1398,7 +1736,7 @@ input[type="range"] { accent-color: var(--cinnabar); }
           <div class="eyebrow">02 · 解纹</div>
           <h2>不只看见纹样，<br>还要读懂它的语法。</h2>
         </div>
-        <p>从形态到寓意，从单元到结构。完成一轮解码任务，你会发现自己已经能用另一种方式观看传统。</p>
+        <p>从形态到寓意，从单元到结构，用另一种方式观看传统。</p>
       </div>
 
       <div class="decode-shell reveal">
@@ -1429,7 +1767,7 @@ input[type="range"] { accent-color: var(--cinnabar); }
           <div class="eyebrow">03 · 用纹</div>
           <h2>把传统纹样，<br>变成你的创作工具。</h2>
         </div>
-        <p>选择母题、构成与配色，像写句子一样组合纹样。每一次调整都会实时生成新的图案，并可导出为数字作品。</p>
+        <p>选择母题、构成与配色。每一次调整都会实时生成新的图案，并可导出为数字作品。</p>
       </div>
 
       <div class="lab-layout reveal">
